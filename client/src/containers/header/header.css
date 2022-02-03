@@ -1,0 +1,121 @@
+.colorBlue__header {
+    display: flex;
+}
+
+.colorBlue__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    margin-right: 5rem;
+    max-width: 50%;
+}
+
+.colorBlue__header-content h1 {
+    font-family: var(--font-family);
+    font-size: 2.7rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+
+}
+
+.colorBlue__header-content h2 {
+    font-family: var(--font-family);
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+
+    margin-top: 1.5rem;
+}
+
+.colorBlue__header-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 800;
+
+    margin-top: 1.8rem;
+}
+
+.colorBlue__header-explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 10px;
+
+    height: 40px;
+    width: 120px;
+    margin-right: 25px;
+}
+
+.colorBlue__header-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: none;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 10px;
+
+    height: 40px;
+    width: 120px;
+    margin-right: 25px;
+}
+
+.colorBlue__header-learn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 120px;
+
+    font-family: var(--font-family);
+    color: var(--color-blue);
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+.colorBlue__header-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .colorBlue__header {
+        flex-direction: column;
+    }
+
+    .colorBlue__header-content {
+        margin: 0 0 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .colorBlue__header-content {
+        min-width: 300px;
+    }
+
+    .colorBlue__header h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .colorBlue__header h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

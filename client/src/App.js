@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import SimpleStorageContract from "./contracts/SimpleStorage.json";
-import getWeb3 from "./getWeb3";
-
+// import { SimpleStorageContract } from "./contracts/SimpleStorage.json";
+// import { getWeb3 } from "./getWeb3";
+import { Navbar } from "./components";
+import { Header } from "./containers";
 import "./App.css";
 
+// web3 init
+/*
 class App extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
 
@@ -68,6 +71,20 @@ class App extends Component {
       </div>
     );
   }
+} */
+
+// App can inherit UI
+const App = () => {
+  return (
+    <div className="App">
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div>
+        <Header />
+      </div>
+    </div>
+  )
 }
 
 export default App;
