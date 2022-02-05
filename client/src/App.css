@@ -1,22 +1,62 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  background-color: var(--color-white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  color: unset;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #09d3ac;
+/* Animations */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* Desktop */
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+/* Large devices - tablets, XL mobile etc. */
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+    margin: 4rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+    margin: 4rem 2rem;
+  }
 }
