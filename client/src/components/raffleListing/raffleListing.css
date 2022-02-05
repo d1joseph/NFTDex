@@ -12,3 +12,60 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.colorBlue__raffle-listing .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0px 10px 0px 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+.colorBlue__raffle-listing .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5;
+    margin: 5px 10px 5px 10px;
+}
+
+.collection-icon, .collection-name, .nftId {
+    padding: 2px;
+    margin-left: 2px;
+}
+
+.nftId {
+    font-size: 12px;
+}
+
+.collection-name {
+    font-size: 18px;
+}
+
+.timer, .timer-label {
+    min-width: 113px;
+    font-size: 12px;
+}
+
+.reserve {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    left: 50px;
+}
+
+.reserve p {
+    position: relative;
+    font-size: 16px;
+}
+
+.progress-bar {
+    min-width: 150px;
+}
+
+.row.ticket-price {
+    padding: 0;
+}
