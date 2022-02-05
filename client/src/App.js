@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import { SimpleStorageContract } from "./contracts/SimpleStorage.json";
 // import { getWeb3 } from "./getWeb3";
 import { Navbar } from "./components";
-import { Header } from "./containers";
+import { Header, TrendingRaffles, FeaturedCollections, FeaturedCreators, GettingStarted, Footer } from "./containers";
 import "./App.css";
 
 // web3 init
@@ -80,8 +80,23 @@ const App = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <div>
+      <div className="header">
         <Header />
+      </div>
+      <div className="trending-raffles">
+        <TrendingRaffles />
+      </div>
+      <div className="featured-collections">
+        <FeaturedCollections />
+      </div>
+      <div className="featured-creators">
+        <FeaturedCreators />
+      </div>
+      <div className="getting-started">
+        <GettingStarted />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   )
