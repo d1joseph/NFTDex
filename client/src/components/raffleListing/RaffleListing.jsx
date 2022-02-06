@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './raffleListing.css';
 import nft from '../../assets/Featured NFT Image.png';
 import nftCollectionIcon from '../../assets/Featured NFT Collection.png';
@@ -20,10 +20,10 @@ const raffleTimeLeft = () => {
 
     if (difference > 0) {
         timeLeft = {
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60)
+          d: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          h: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          m: Math.floor((difference / 1000 / 60) % 60),
+          s: Math.floor((difference / 1000) % 60)
         };
       }
     
@@ -31,11 +31,44 @@ const raffleTimeLeft = () => {
 };
 
 // progress bar
-
+const ProgressBar = (props) => {
+    const { bgcolor, completed } = props;
+    
+    const containerStyles = {
+        height: 18,
+        width: '100%',
+        backgroundColor: "#e0e0de",
+        borderRadius: 50,
+        margin: 5
+    }
+    
+    const fillerStyles = {
+        height: '100%',
+        width: `${completed}%`,
+        backgroundColor: bgcolor,
+        borderRadius: 'inherit',
+        textAlign: 'right'
+    }
+    
+    const labelStyles = {
+        padding: 2,
+        color: 'white',
+        fontWeight: 'bold'
+    }
+    
+    
+    return (
+        <div style={containerStyles}>
+            <div style={fillerStyles}>
+                <span style={labelStyles}>{`${completed}%`}</span>
+            </div>
+        </div>         
+    );
+};
 
 
 const raffleListing = () => {
-    /*
+    
     const [timeLeft, setTimeLeft] = useState(raffleTimeLeft());
     const timerComponents = [];
 
@@ -60,8 +93,19 @@ const raffleListing = () => {
 
         return () => clearTimeout(timer);
     });
-    */
+
     
+    // Prog bar state hooks
+    const [completed, setCompleted] = useState(0);
+
+    /* 
+    Testing progression animation and behaviour
+    
+    useEffect(() => {
+        setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), []);
+    })
+    */
+
     return (
         <div className='colorBlue__raffle-listing' >
             
@@ -70,12 +114,16 @@ const raffleListing = () => {
                 <img src={ nft } alt="" />
             </div>
 
-            <div className='row'>
-                { /* collection data */ }
-                <div className='collection'>
+            <div className='row collections'>
+                { /* collection icon */ }
+                <div className='collection-icon'>
                     <img src={ nftCollectionIcon } alt="" />
-                    <h5>Bored Ape Yacht Club</h5>
                 </div>
+                
+                { /* collection name */ }
+                <div className='collection-name' >
+                    <h5>Bored Ape Yacht Club</h5>
+                </div >
 
                 { /* nftId */ }
                 <div className='nftId'>
@@ -83,32 +131,37 @@ const raffleListing = () => {
                 </div>
             </div>
 
-            <div className='row'>
+            <div className='row raffle'>
                 { /* raffle end timer */ }
                 <div className='time-left'>
                     <p className='timer-label'>Ending in</p>
-                    {/*{timerComponents.length ? timerComponents : <span>Time's up!</span>}*/}
-                    <div className='timer'><strong>22h 58m 26s</strong></div>
+                    <div className='timer'><strong>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</strong></div>
                 </div>
                 
                 { /* reserve prog bar */ }
                 <div className='reserve'>
-                    <p>Reserve</p>
+                    <p className='progress-bar-label'>Reserve</p>
+                    <div className='progress-bar'>
+                        <ProgressBar bgcolor={ "#000000" } completed={50} />
+                    </div>
                 </div>
             </div>
 
             { /* ticket price in eth */ }
-            <div className='ticket-price'>
-                <img src={ ethereum } alt="Ethereum" />
+            <div className='col ticket-price'>
                 <p>Ticket Price</p>
-                <div className='eth-amount'> <strong>0.01</strong></div>
-                <span>($1,000,000,000.00 AUD)</span>
+                <div className='row ticket-price'>
+                    <img src={ ethereum } alt="Ethereum" id='' />
+                    <div className='eth-amount'> <strong>0.01</strong></div>
+                    <span>($1,000,000,000.00 AUD)</span>
+                </div>
             </div>
             
             { /* nft-owner */ }
-            <div className='nft-owner'>
-                <img src={''}  />
-                <p className='user'>Owned by {'TJ'}</p>
+            <div className='row nft-owner'>
+                <button>Join Raffle</button>
+                <img src={ nftOwner }  />
+                <p className='user'>Listed by <strong>{'TJ'}</strong></p>
             </div>
         </div>
     );

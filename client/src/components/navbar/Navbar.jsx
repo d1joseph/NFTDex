@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className='colorBlue__navbar-search'>
                 <form action="/" method='get'>
                     <label htmlFor="search-bar"><span className="hidden"></span></label>
-                    <input type="text" name="s" id="search-bar" placeholder='Search the Blue...' value="" />
+                    <input type="text" readOnly name="s" id="search-bar" placeholder='Search the Blue...' value="" />
                 </form>
             </div>
 
