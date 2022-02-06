@@ -159,8 +159,9 @@ const raffleListing = () => {
             
             { /* nft-owner */ }
             <div className='row nft-owner'>
+                <button>Join Raffle</button>
                 <img src={ nftOwner }  />
-                <p className='user'>Owned by <strong>{'TJ'}</strong></p>
+                <p className='user'>Listed by <strong>{'TJ'}</strong></p>
             </div>
         </div>
     );
