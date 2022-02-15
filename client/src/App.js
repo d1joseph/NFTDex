@@ -89,12 +89,13 @@ const App = () => {
       <div className="featured-collections">
         <FeaturedCollections />
       </div>
-      <div className="featured-creators">
-        <FeaturedCreators />
-      </div>
       <div className="getting-started">
         <GettingStarted />
       </div>
+      <div className="featured-creators">
+        <FeaturedCreators />
+      </div>
+      
       <div className="footer">
         <Footer />
       </div>

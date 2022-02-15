@@ -1,6 +1,8 @@
 .colorBlue__header {
     display: flex;
+    justify-content: center;
 }
+
 
 .colorBlue__header-content {
     flex: 1;
