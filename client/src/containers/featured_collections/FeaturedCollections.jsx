@@ -11,7 +11,7 @@ const FeaturedCollections = () => {
                     <div className='dot'></div>
                     <h1>Featured Collections</h1>    
                 </div>
-                <a className='view-all' href="">View all raffles</a>
+                <a className='view-all' href="">View All Collections</a>
             </div>
             <span className='divider'></span>
 
