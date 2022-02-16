@@ -10,6 +10,7 @@ const FeaturedCollections = () => {
                 <div className='wrapper'>
                     <div className='dot'></div>
                     <h1>Featured Collections</h1>    
+                    <h2>la la la </h2>
                 </div>
                 <a className='view-all' href="">View All Collections</a>
             </div>
