@@ -1,6 +1,7 @@
 .colorBlue__raffle-listing {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     height: 542px;
     width: 332px;

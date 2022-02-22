@@ -10,6 +10,9 @@ import logo2 from "../../assets/featured_collections/Creepz collection.png";
 import logo3 from "../../assets/featured_collections/CryptoBatz collection.png";
 import logo4 from "../../assets/featured_collections/Azuki collection.png";
 
+import verified from "../../assets/Verified.svg";
+import transparent from "../../assets/transparent.png";
+
 //Temp - Image Array
 const collection1 = [
   {
@@ -20,8 +23,8 @@ const collection1 = [
     logo: logo1,
     author: "HAPEBEAST",
     items: 8.1,
-    col_verified: true,
-    auth_verified: true
+    col_verified: verified,
+    auth_verified: verified
   },
   {
     id: "2",
@@ -31,8 +34,8 @@ const collection1 = [
     logo: logo2,
     author: "Genesis-Creepz-OVERLORD",
     items: 11.1,
-    col_verified: false,
-    auth_verified: false
+    col_verified: transparent,
+    auth_verified: transparent
   },
   {
     id: "3",
@@ -42,8 +45,8 @@ const collection1 = [
     logo: logo3,
     author: "SutterSystems",
     items: 9.7,
-    col_verified: true,
-    auth_verified: false
+    col_verified: verified,
+    auth_verified: transparent
   },
   {
     id: "4",
@@ -53,8 +56,8 @@ const collection1 = [
     logo: logo4,
     author: "TeamAzuki",
     items: 10,
-    col_verified: false,
-    auth_verified: true
+    col_verified: transparent,
+    auth_verified: verified
   }
 ];
 
