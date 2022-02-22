@@ -1,7 +1,8 @@
 import React from 'react';
 import './featuredCreators.css';
 import Carousel2 from '../../components/carousel/Carousel2';
-import cats from '../../components/carousel/cats';
+import creators1 from '../../components/creatorsFeatured/creators1';
+import CreatorsFeatured from '../../components/creatorsFeatured/creatorsFeatured';
 
 
 
@@ -15,12 +16,17 @@ const FeaturedCreators = () => {
                     <div className='dot'></div>
                     <h1>Featured Creators</h1>    
                 </div>
-                <a className='view-all' href="">View all raffles</a>
+                <a className='view-all' href="">View all creators</a>
             </div>
             <span className='divider'></span>
             
-            {/* featured elements in carousel */}
-            <Carousel2 images={cats} />
+            {/* featured elements in carousel 
+            <Carousel2 images={creators1} type="creators_f"/>
+            <CreatorsFeatured cards={creators1[0]}/>
+            */}
+            
+            <Carousel2 images={creators1} type="creators_f"/>
+            
 
         </div>
     );

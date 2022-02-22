@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import "./carousel.css";
 import CollectionsFeatured from '../../components/collectionsFeatured/CollectionsFeatured';
+import CreatorsFeatured from '../creatorsFeatured/creatorsFeatured';
 
 export default function Carousel2({ images , type}) {
   
@@ -61,7 +62,20 @@ export default function Carousel2({ images , type}) {
         </div>
       );
     }
-    else {
+    else if (retType == 'creators_f') {
+      return (
+        <div>
+          <Slider {...settings}>
+            {images.map((item) => (
+              <div className="sliderWrapper" key={item.id}>
+                <CreatorsFeatured cards={item}/>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      );
+    }
+    else{
       return (
         <div>
           <Slider {...settings}>

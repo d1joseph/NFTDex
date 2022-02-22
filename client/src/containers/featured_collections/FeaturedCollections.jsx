@@ -1,6 +1,5 @@
 import React from 'react';
 import './featuredCollections.css';
-
 import Carousel2 from '../../components/carousel/Carousel2';
 import collection1 from '../../components/collectionsFeatured/collection1';
 
@@ -21,8 +20,6 @@ const FeaturedCollections = () => {
             </div>
             <span className='divider'></span>
             {/* featured elements */}
-
-            {/*pass cats <Carousel data = {cats}/> */}
             <Carousel2 images={collection1} type="collections_f"/>
             
         </div>
