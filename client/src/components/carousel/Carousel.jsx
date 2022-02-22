@@ -1,4 +1,4 @@
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 import "./carousel.css";
 
 export default function Carousel({ images }) {
@@ -31,15 +31,26 @@ export default function Carousel({ images }) {
     
     return (
       <div>
-         <Slider {...settings}>
-        {images.map((item) => (
+        <Slider {...settings}>
+          {images.map((item) => (
             <div className="sliderWrapper" key={item.id}>
                 <img className="sliderImg" src={item.src}  alt={item.alt} />
                 <p>{item.name}</p>
             </div>
-      ))}
-    </Slider>
+          ))}
+        </Slider>
       </div>
     );
   }
+
+  /* Testing - Using direct arrays
+
+            {images.map((item) => (
+            <div className="sliderWrapper" key={item.id}>
+                <img className="sliderImg" src={item.src}  alt={item.alt} />
+                <p>{item.name}</p>
+            </div>
+          ))}
+
+  */
 

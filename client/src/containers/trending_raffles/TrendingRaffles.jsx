@@ -1,8 +1,5 @@
 import React from 'react';
 import './trendingRaffles.css';
-import Carousel from '../../components/carousel/Carousel';
-import images from '../../components/carousel/images.js';
-
 
 const TrendingRaffles = () => {
 
@@ -18,10 +15,6 @@ const TrendingRaffles = () => {
             </div>
             <span className='divider'></span>
             {/* featured elements */}
-
-            {/*pass dogs */}
-            <Carousel images={images} />
-            
 
         </div>
     );

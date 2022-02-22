@@ -1,18 +1,14 @@
 import React from 'react';
 import './featuredCollections.css';
 
-//NEW - Cats
-import Carousel from '../../components/carousel/Carousel';
-import cats from '../../components/carousel/cats';
+import Carousel2 from '../../components/carousel/Carousel2';
+import collection1 from '../../components/collectionsFeatured/collection1';
 
 //TODO IDENTIFY  top 10 collections based on number of raffles in each collection
 //TODO GET collection variables for those 10 and put into Array
-//TODO Pass the array to the carousel as type = collection
-
-//TODO Form image array, pass to carousel
 
 const FeaturedCollections = () => {
-
+    const conttype = "collections_f";
     return (
         <div className='colorBlue__featured-collections section__padding'>
             {/* heading */}
@@ -27,7 +23,7 @@ const FeaturedCollections = () => {
             {/* featured elements */}
 
             {/*pass cats <Carousel data = {cats}/> */}
-            <Carousel images={cats} />
+            <Carousel2 images={collection1} type="collections_f"/>
             
         </div>
     );

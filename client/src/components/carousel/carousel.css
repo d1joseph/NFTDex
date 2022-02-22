@@ -27,14 +27,15 @@
 .slides .slick-next {
   position: absolute;
   top: 50%;
-  z-index: 1;
+  z-index: -1;
   background-color: black;
 }
 
 .slides .slick-prev {
-  left: 5%;
+  left: 0%;
 }
 
 .slides .slick-next {
-  right: 5%;
+  right: 0%;
 }
+

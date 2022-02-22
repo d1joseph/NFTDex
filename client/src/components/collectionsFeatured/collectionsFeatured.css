@@ -1,0 +1,312 @@
+.colorBlue__collections-featured {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    height: 410px;
+    width: 300px;
+
+    font-family: var(--font-family);
+
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
+    }
+
+.colorBlue__collections-featured .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0px 5px 0px 5px;
+    margin: 0px 0px 5px 0px;
+}
+
+.colorBlue__collections-featured .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5;
+    margin: 5px 10px 5px 10px;
+}
+
+.cardImg {
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    padding: 0px 2vw;
+    object-fit: cover;
+  }
+
+.collection-icon {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 15px;
+    top: 18px;
+}
+
+.collection-name {
+    
+    position: absolute;
+    left: 59px;
+    top: 18px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.row.nft-owner {
+    justify-content: space-between;
+}
+
+.nft-owner p {
+    font-size: 14px;
+}
+
+.nft-owner strong {
+    color: var(--color-blue);
+}
+
+
+
+/*
+//Featured Collection 1
+
+position: absolute;
+width: 300px;
+height: 400px;
+left: 330px;
+top: 1422px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Mask Group 
+
+position: absolute;
+width: 300px;
+height: 400px;
+left: 330px;
+top: 1422px;
+
+
+
+/* Rectangle 9 
+
+position: absolute;
+width: 300px;
+height: 400px;
+left: 330px;
+top: 1422px;
+
+background: #8B8C8E;
+border-radius: 10px;
+
+
+/* image 4 
+
+position: absolute;
+width: 353px;
+height: 370px;
+left: 304px;
+top: 1422px;
+
+background: url(image.png);
+
+
+/* HAPE Prime 
+
+position: absolute;
+width: 183px;
+height: 19px;
+left: 389px;
+top: 1447px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 10 
+
+position: absolute;
+width: 300px;
+height: 30px;
+left: 330px;
+top: 1792px;
+
+background: #8A8686;
+border-radius: 0px 0px 10px 10px;
+
+
+/* Collection Image 
+
+position: absolute;
+width: 33px;
+height: 33px;
+left: 345px;
+top: 1440px;
+
+
+
+/* Ellipse 1 
+
+position: absolute;
+width: 33px;
+height: 33px;
+left: 345px;
+top: 1440px;
+
+background: #C4C4C4;
+border: 1px solid #000000;
+box-sizing: border-box;
+
+
+/* image 1 
+
+position: absolute;
+width: 33px;
+height: 33px;
+left: 345px;
+top: 1440px;
+
+background: url(image.png);
+
+
+/* Verified 
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 525px;
+top: 1447px;
+
+
+
+/* Vector 
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Blue 
+background: #00A1FF;
+
+
+/* Vector 
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 41.67%;
+bottom: 41.67%;
+
+border: 1px solid #FFFFFF;
+
+
+/* Owned By 
+
+position: absolute;
+width: 270px;
+height: 15px;
+left: 345px;
+top: 1799px;
+
+
+
+/* Created by HAPEBEAST 
+
+position: absolute;
+width: 109px;
+height: 15px;
+left: 345px;
+top: 1799px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Verified 
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 454px;
+top: 1800px;
+
+
+
+/* Vector 
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Blue 
+background: #00A1FF;
+
+
+/* Vector 
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 41.67%;
+bottom: 41.67%;
+
+border: 1px solid #FFFFFF;
+
+
+/* 8.1K Items 
+
+position: absolute;
+width: 109px;
+height: 15px;
+left: 506px;
+top: 1799px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #FFFFFF;
+
+
+
+*/

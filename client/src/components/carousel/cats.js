@@ -5,6 +5,7 @@ import img2 from "../../assets/carousel_testimages/cat2.jpg";
 import img3 from "../../assets/carousel_testimages/cat3.jpg";
 import img4 from "../../assets/carousel_testimages/cat4.jpg";
 
+
 //Temp - Image Array
 const cats = [
   {
