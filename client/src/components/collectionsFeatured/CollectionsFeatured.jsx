@@ -3,7 +3,7 @@ import './collectionsFeatured.css';
 
 export default function CollectionsFeatured({ cards }) {
     
-    console.log({cards});
+    
     return (
         
         <div className='colorBlue__collections-featured' >

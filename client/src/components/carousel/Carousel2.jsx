@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import "./carousel.css";
 import CollectionsFeatured from '../../components/collectionsFeatured/CollectionsFeatured';
 import CreatorsFeatured from '../creatorsFeatured/creatorsFeatured';
+import RafflesFeatured from '../rafflesFeatured/rafflesFeatured';
 
 export default function Carousel2({ images , type}) {
   
@@ -69,6 +70,19 @@ export default function Carousel2({ images , type}) {
             {images.map((item) => (
               <div className="sliderWrapper" key={item.id}>
                 <CreatorsFeatured cards={item}/>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      );
+    }
+    else if (retType == 'raffles_f') {
+      return (
+        <div>
+          <Slider {...settings}>
+            {images.map((item) => (
+              <div className="sliderWrapper" key={item.id}>
+                <RafflesFeatured cards={item}/>
               </div>
             ))}
           </Slider>

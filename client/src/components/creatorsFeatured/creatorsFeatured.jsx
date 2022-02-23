@@ -3,7 +3,7 @@ import './CreatorsFeatured.css';
 
 export default function CreatorsFeatured({ cards }) {
     
-    console.log({cards});
+    
     return (
         
         <div className='colorBlue__creators-featured' >

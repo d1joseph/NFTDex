@@ -1,5 +1,8 @@
 import React from 'react';
 import './trendingRaffles.css';
+import Carousel2 from '../../components/carousel/Carousel2';
+import RafflesFeatured from '../../components/rafflesFeatured/rafflesFeatured';
+import raffles1 from '../../components/rafflesFeatured/raffles1';
 
 const TrendingRaffles = () => {
 
@@ -14,7 +17,11 @@ const TrendingRaffles = () => {
                 <a className='view-all' href="">View All Raffles</a>
             </div>
             <span className='divider'></span>
-            {/* featured elements */}
+            {/* featured elements in carousel 
+            <Carousel2 images={raffles1} type="raffles_f"/>
+            <RafflesFeatured cards={raffles1[0]}/>
+            */}
+            <Carousel2 images={raffles1} type="raffles_f"/>
 
         </div>
     );
