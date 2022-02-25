@@ -39,7 +39,8 @@ const collection1 = [
   },
   {
     id: "3",
-    name: "CryptoBatz",
+    //name: "CryptoBatz",
+    name: "Flapp Flappy Bat Bois",
     alt: "",
     src: img3,
     logo: logo3,

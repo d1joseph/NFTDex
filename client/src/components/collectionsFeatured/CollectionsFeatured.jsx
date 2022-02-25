@@ -2,35 +2,30 @@ import React from 'react';
 import './collectionsFeatured.css';
 
 export default function CollectionsFeatured({ cards }) {
-    
-    
     return (
-        
-        <div className='colorBlue__collections-featured' >
-            <div key={cards.id}>
-                <img className = 'cardImg' src={ cards.src } alt="" />
-                <div className='row collections'>
-                    
-                    <div className='collection-icon'>
-                        <img src={ cards.logo } alt="" />
-                    </div>
-                    
-                    <div className='collection-name' >
-                        <h5>{cards.name}</h5>
-                        <img className = 'collection-verified' src={ cards.col_verified } alt="" />
-                    </div >
+        <div className='colorBlue__collections_featured' >
+            {/* Image */}
+            <img className = 'colorBlue__collections_featured-cardImg' src={ cards.src } alt="" />
+            
+            {/* Collection Name */}
+            <div className='row collection'>
+                <img className='colorBlue__collections_featured-collection_icon' src={ cards.logo } alt="" />
+                <div className='colorBlue__collections_featured-collection_name' >
+                    <p>{cards.name}</p>
+                    <img className = 'colorBlue__collections_featured-collection_verified' src={ cards.col_verified } alt="" />
+                </div >
+            </div>            
 
-                </div>
-            </div>
-
+            {/* Collection Owner */}
             <div className='row collection-owner'>
-                <p className='user'>Created by <strong>{cards.author}</strong></p>
-                <img className = "collection-owner-verified" src={cards.auth_verified} alt=""/>
-                <p><strong>{cards.items}k</strong> Items</p>
-                
+                <div className= 'column collection-owner'>
+                    <p>Created by <strong>{cards.author}</strong></p>
+                    <img className = "colorBlue__collections_featured-collection_owner_verified" src={cards.auth_verified} alt=""/>
+                </div>
+                <p><strong>{cards.items}K</strong> Items</p>
             </div>
+
         </div>
-        
     );
 };
 

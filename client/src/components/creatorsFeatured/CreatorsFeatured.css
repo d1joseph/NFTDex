@@ -1,9 +1,9 @@
-.colorBlue__creators-featured {
+.colorBlue__creators_featured {
     display: flex;
     flex-direction: column;
     position: relative;
 
-    height: 410px;
+    height: 400px;
     width: 300px;
 
     font-family: var(--font-family);
@@ -16,17 +16,17 @@
     margin-top: 5px;
     }
 
-.colorBlue__creators-featured .row {
+.colorBlue__creators_featured .row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 
     padding: 0px 10px 0px 10px;
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 5px 10px;
 }
 
-.colorBlue__creators-featured .col {
+.colorBlue__creators_featured .col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
     margin: 5px 10px 5px 10px;
 }
 
-.colorBlue__creatorss-featured-cardImg {
+.colorBlue__creators_featured-cardImg {
     box-sizing: border-box;
     height: 160px;
     object-fit: cover;
@@ -45,73 +45,74 @@
 
 .colorBlue__creators-icon {
     box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    clip-path: circle(40px at center);
     position: absolute;
-    width: 75px;
-    height: 75px;
-    left: 20px;
     top: 119px;
+    left: 17px;
 }
 
 .colorBlue__creators-name {
-    
-    position: absolute;
-    left: 20px;
-    top: 209px;
-
-    font-family: Roboto;
-    font-style: normal;
+    max-width: 270px;
     font-weight: bold;
     font-size: 24px;
-    line-height: 28px;
     display: flex;
     color: #000000;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.colorBlue__creators-name p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.colorBlue__creators-verified {
+    height: 30px;
+    width: 30px;
+    padding-left: 5px;
+  }
+
+.row.social{
+    position:relative;
+    top: -10px;
 }
 
 .colorBlue__creators-socials {
-    position: absolute;
-    width: 183px;
-    height: 19px;
-    left: 20px;
-    top: 229px;
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 14px;
     display: flex;
     align-items: center;
-    
     color: #00A1FF;
-    ;
 }
 
 .colorBlue__creators-description {
-    position: absolute;
-    width: 259px;
-    height: 56px;
-    left: 20px;
-    top: 258px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    height: 50px;
     font-size: 10px;
     line-height: 12px;
-    
     color: #3C3C3B;
-    ;
+
+    /* Addition lines for 4 line or multiline ellipsis */
+    text-overflow:ellipsis;
+    overflow:hidden;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.colorBlue__creators-divider {
+    background-color: var(--color-grey-light);
+    width: 100%;
+    height: 0px;
+    border: 1px solid #ACACAC;
 }
 
 .colorBlue__creators-followers {
-    position: absolute;
-    width: 109px;
-    height: 37px;
-    left: 20px;
-    top: 338px;
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 21.09px;
@@ -126,40 +127,7 @@
     ;
 }
 
-.colorBlue__creators-verified {
-    height: 30px;
-    width: 30px;
-    padding-left: 5px;
-  }
 
-.row.collection-owner {
-    justify-content: space-between;
-}
 
-.collection-owner p {
-    font-size: 10px;
-}
-
-.collection-owner-verified {
-    height: 20px;
-    width: 20px;
-}
-
-.colorBlue__creators-socials p {
-    font-size: 10px;
-}
-
-.colorBlue__creators-socials strong {
-    color: var(--color-blue);
-}
-
-.colorBlue__creators-divider {
-    background-color: var(--color-grey-light);
-    width: 100%;
-    position: absolute;
-    height: 0px;
-    top: 319px;
-    border: 1px solid #ACACAC;
-}
 
 

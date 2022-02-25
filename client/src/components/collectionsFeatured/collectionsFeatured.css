@@ -1,11 +1,9 @@
-
-
-.colorBlue__collections-featured {
+.colorBlue__collections_featured {
     display: flex;
     flex-direction: column;
     position: relative;
 
-    height: 410px;
+    height: 400px;
     width: 300px;
 
     font-family: var(--font-family);
@@ -18,7 +16,7 @@
     margin-top: 5px;
     }
 
-.colorBlue__collections-featured .row {
+.colorBlue__collections_featured .row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +26,7 @@
     margin: 0px 0px 5px 0px;
 }
 
-.colorBlue__collections-featured .col {
+.colorBlue__collections_featured .col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,57 +35,69 @@
     margin: 5px 10px 5px 10px;
 }
 
-.cardImg {
+.colorBlue__collections_featured-cardImg {
     box-sizing: border-box;
-    height: 370px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-    align-items: center;
-  }
-
-.collection-icon {
-    box-sizing: border-box;
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    left: 15px;
-    top: 18px;
-    
+    height: 370px;
     
 }
 
-.collection-name {
-    
-    position: absolute;
-    left: 59px;
-    top: 18px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+.row.collection {
     display: flex;
     align-items: center;
-
-    color: #FFFFFF;
+    justify-content: flex-start;
+    position: absolute;
+    left: 10px;
+    top: 18px;
 }
 
-.collection-verified {
-    height: 30px;
-    width: 30px;
-    padding-left: 5px;
+.colorBlue__collections_featured-collection_icon {
+    width: 33px;
+    height: 33px;
+    clip-path: circle(16px at center);
+}
+
+.colorBlue__collections_featured-collection_name {
+    max-width: 220px;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.colorBlue__collections_featured-collection_name p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.colorBlue__collections_featured-collection_verified {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
   }
 
 .row.collection-owner {
     justify-content: space-between;
+    margin-top: 7px;
+}
+
+.column.collection-owner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .collection-owner p {
     font-size: 10px;
 }
 
-.collection-owner-verified {
-    height: 10px;
-    width: 10px;
+.colorBlue__collections_featured-collection_owner_verified {
+    height: 14px;
+    width: 14px;
+    margin-left: 2px;
 }

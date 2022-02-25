@@ -1,4 +1,4 @@
-.colorBlue__raffles-featured {
+.colorBlue__raffles_featured {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -16,7 +16,7 @@
     margin-top: 5px;
     }
 
-.colorBlue__raffles-featured .row {
+.colorBlue__raffles_featured .row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,7 +26,7 @@
     margin: 0px 0px 5px 0px;
 }
 
-.colorBlue__raffles-featured .col {
+.colorBlue__raffles_featured .col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
     margin: 5px 10px 5px 10px;
 }
 
-.colorBlue__raffless-featured-cardImg {
+.colorBlue__raffles_featured-cardImg {
     box-sizing: border-box;
     height: 300px;
     object-fit: cover;
@@ -43,50 +43,48 @@
     align-items: center;
   }
 
-.colorBlue__raffles-col_icon {
-    box-sizing: border-box;
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    left: 20px;
-    top: 318px;
-}
-
-.colorBlue__raffles-col_name {
-    
-    position: absolute;
-    left: 62px;
-    top: 320px;
+.row.nft_details {
     align-items: center;
-
-    font-family: Roboto;
-    font-style: normal;
+    justify-content: space-between;
 }
 
-.colorBlue__raffles-col_name p{
+.iconameid {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stack_nameID {
+    margin-left: 5px;
+    
+}
+
+
+
+
+.colorBlue__raffles_featured-col_icon {
+    
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    clip-path: circle(20px at center);
+}
+
+.colorBlue__raffles_featured-col_name {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 14px;
-    line-height: 16.41px;
-    display: flex;
-    color: #000000;
+    
 }
 
-
-.colorBlue__raffles-verified {
+.colorBlue__raffles_featured-verified {
     height: 18px;
     width: 18px;
     padding-left: 5px;
   }
 
-  .colorBlue__raffles-nft_name {
-    
-    position: absolute;
-    left: 62px;
-    top: 336px;
-    align-items: left;
-
-    font-family: Roboto;
-    font-style: normal;
+  .colorBlue__raffles_featured-nft_name {
     font-weight: 400;
     font-size: 10px;
     display: flex;
@@ -94,9 +92,6 @@
 }
 
 .colorBlue__raffles-ticket {
-    position: absolute;
-    right: 20px;
-    top: 318px;
     justify-content: flex-end;
     font-weight: 700;
     font-size: 10px;
@@ -105,33 +100,32 @@
 }
 
 .colorBlue__raffles-ticketprice {
-    
-    position: absolute;
     display: flex;
     align-items: flex-end;
-
-    right: 20px;
-    top: 337px;
+    align-items: center;
     font-weight: 600;
     font-size: 14px;
+}
 
+.colorBlue__raffles-currency{
+    height: 13px;
+    width: 7px;
+    margin-right:2px;
+}
+
+.row.raffle {
+    justify-content: space-between;
 }
 
 
-.colorBlue__rafflesFeatured_raffle {
-    position: absolute;
-    left: 10px;
-    top: 368px;
+.colorBlue__rafflesFeatured_timer-label, .colorBlue__rafflesFeatured_progress-bar-label {
+    font-size: 10px;
+    color: #7D7D7D;
 }
 
 .colorBlue__rafflesFeatured_timer {
     min-width: 113px;
     font-size: 12px;
-}
-
-.colorBlue__rafflesFeatured_timer-label, .colorBlue__rafflesFeatured_progress-bar-label {
-    font-size: 10px;
-    color: #7D7D7D;
 }
 
 .colorBlue__rafflesFeatured_timer-label {
@@ -143,436 +137,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
     
 }
 
 .colorBlue__rafflesFeatured_reserve p {
-    position: relative;
     font-size: 10px;
 }
-
 
 .colorBlue__rafflesFeatured_progress-bar {
     min-width: 150px;
 }
 
-
-
-
-
-/* Trending NFT 1 
-
-position: absolute;
-width: 300px;
-height: 421px;
-left: 330px;
-top: 838px;
-
-
-
-/* Rectangle 4 
-
-position: absolute;
-width: 300px;
-height: 154px;
-left: 330px;
-top: 1105px;
-
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-
-
-/* Ticket Price 
-
-position: absolute;
-width: 63px;
-height: 32px;
-left: 547px;
-top: 1158px;
-
-
-
-/* 1.2 
-
-position: absolute;
-width: 25px;
-height: 15px;
-left: 585px;
-top: 1175px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 16px;
-display: flex;
-align-items: center;
-text-align: right;
-
-color: #000000;
-
-
-
-/* 6f8e2979d428180222796ff4a33ab929 1 
-
-position: absolute;
-width: 7px;
-height: 13px;
-left: 578px;
-top: 1175px;
-
-
-
-/* Vector 
-
-position: absolute;
-left: 48.51%;
-right: 2.13%;
-top: 1.26%;
-bottom: 31.06%;
-
-background: #343434;
-
-
-/* Vector 
-
-position: absolute;
-left: 1.27%;
-right: 50.43%;
-top: 1.26%;
-bottom: 31.06%;
-
-background: #8C8C8C;
-
-
-/* Vector 
-
-position: absolute;
-left: 48.97%;
-right: 2.1%;
-top: 56.86%;
-bottom: 0.75%;
-
-background: #3C3C3B;
-
-
-/* Vector 
-
-position: absolute;
-left: 1.27%;
-right: 50.43%;
-top: 56.86%;
-bottom: 0.76%;
-
-background: #8C8C8C;
-
-
-/* Vector 
-
-position: absolute;
-left: 49.57%;
-right: 2.13%;
-top: 37.49%;
-bottom: 31.06%;
-
-background: #141414;
-
-
-/* Vector 
-
-position: absolute;
-left: 1.27%;
-right: 50.43%;
-top: 37.49%;
-bottom: 31.06%;
-
-background: #393939;
-
-
-/* Ticket 
-
-position: absolute;
-width: 63px;
-height: 15px;
-left: 547px;
-top: 1158px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 10px;
-line-height: 12px;
-display: flex;
-align-items: center;
-text-align: right;
-
-color: #7D7D7D;
-
-
-
-/* Reserve 
-
-position: absolute;
-width: 148px;
-height: 32px;
-left: 462px;
-top: 1204px;
-
-
-
-/* Reserve 
-
-position: absolute;
-width: 107px;
-height: 15px;
-left: 462px;
-top: 1204px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 10px;
-line-height: 12px;
-display: flex;
-align-items: center;
-
-color: #7D7D7D;
-
-
-
-/* Reserve Bar 
-
-position: absolute;
-width: 148px;
-height: 12px;
-left: 462px;
-top: 1224px;
-
-
-
-/* Rectangle 6 
-
-position: absolute;
-width: 148px;
-height: 12px;
-left: 462px;
-top: 1224px;
-
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 10px;
-
-
-/* Rectangle 7 
-
-position: absolute;
-width: 94px;
-height: 12px;
-left: 462px;
-top: 1224px;
-
-background: #000000;
-border-radius: 10px;
-
-
-/* Ending in 
-
-position: absolute;
-width: 195px;
-height: 33px;
-left: 349px;
-top: 1206px;
-
-
-
-/* 22h 58m 26s 
-
-position: absolute;
-width: 195px;
-height: 15px;
-left: 349px;
-top: 1224px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 16px;
-display: flex;
-align-items: center;
-
-color: #000000;
-
-
-
-/* Ending in 
-
-position: absolute;
-width: 195px;
-height: 15px;
-left: 349px;
-top: 1206px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 10px;
-line-height: 12px;
-display: flex;
-align-items: center;
-
-color: #7D7D7D;
-
-
-
-/* Collection Name 
-
-position: absolute;
-width: 238px;
-height: 33px;
-left: 349px;
-top: 1156px;
-
-
-
-/* #3690 
-
-position: absolute;
-width: 195px;
-height: 15px;
-left: 392px;
-top: 1174px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 12px;
-display: flex;
-align-items: center;
-
-color: #7D7D7D;
-
-
-
-/* Bored Ape Yacht Club 
-
-position: absolute;
-width: 195px;
-height: 15px;
-left: 392px;
-top: 1158px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 16px;
-display: flex;
-align-items: center;
-
-color: #000000;
-
-
-
-/* Verified 
-
-position: absolute;
-width: 14px;
-height: 14px;
-left: 530px;
-top: 1159px;
-
-
-
-/* Vector 
-
-position: absolute;
-left: 12.5%;
-right: 12.5%;
-top: 12.5%;
-bottom: 12.5%;
-
-/* Blue 
-background: #00A1FF;
-
-
-/* Vector 
-
-position: absolute;
-left: 37.5%;
-right: 37.5%;
-top: 41.67%;
-bottom: 41.67%;
-
-border: 1px solid #FFFFFF;
-
-
-/* Collection Image 
-
-position: absolute;
-width: 33px;
-height: 33px;
-left: 349px;
-top: 1156px;
-
-
-
-/* Ellipse 1 
-
-position: absolute;
-width: 33px;
-height: 33px;
-left: 349px;
-top: 1156px;
-
-background: #C4C4C4;
-border: 1px solid #000000;
-box-sizing: border-box;
-
-
-/* image 1 
-
-position: absolute;
-width: 41px;
-height: 41px;
-left: 345px;
-top: 1152px;
-
-background: url(image.png);
-
-
-/* Mask Group 
-
-position: absolute;
-width: 300px;
-height: 300px;
-left: 330px;
-top: 838px;
-
-
-
-/* Rectangle 8 
-
-position: absolute;
-width: 300px;
-height: 300px;
-left: 330px;
-top: 838px;
-
-background: #C4C4C4;
-border-radius: 10px;
-
-
-/* Featured Image 
-
-position: absolute;
-width: 300px;
-height: 300px;
-left: 330px;
-top: 838px;
-
-background: url(unnamed (5).png);
-
-*/

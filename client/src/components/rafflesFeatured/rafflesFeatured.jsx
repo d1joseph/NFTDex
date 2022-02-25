@@ -2,11 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './RafflesFeatured.css';
 
 export default function RafflesFeatured({ cards }) {
-    console.log({cards});
     
-
-    /* from raffle listings */
-
 // raffle timer
 const raffleTimeLeft = () => {
     let year = new Date().getFullYear();
@@ -57,7 +53,7 @@ const ProgressBar = (props) => {
         fontWeight: 'bold'
     }
     
-    console.log(completed)
+    
     return (
         
         <div style={containerStyles}>
@@ -101,58 +97,58 @@ const [completed, setCompleted] = useState(0);
 
 
     return (
-        <div className='colorBlue__raffles-featured' >
-            <div key={cards.id}>
-                {/*NFT Image */}
-                <img className = 'colorBlue__raffless-featured-cardImg' src={ cards.nft_src } alt="" />
-                    {/*Collection Icon */}
-                    <div className='colorBlue__raffles-col_icon'>
-                        <img src={ cards.col_logo } alt="" />
+        <div className='colorBlue__raffles_featured' >
+            
+            {/*NFT Image */}
+            <img className = 'colorBlue__raffles_featured-cardImg' src={ cards.nft_src } alt="" />
+            <br/>
+            
+            {/*NFT Info and Ticket Price*/}
+            <div className='row nft_details'>
+                
+                <div className='iconameid'>
+                    <img className='colorBlue__raffles_featured-col_icon' src={ cards.col_logo } alt="" />
+                    
+                    <div className='stack_nameID'>  
+                        <div className='colorBlue__raffles_featured-col_name' >
+                            {cards.col_name} 
+                            <img className = 'colorBlue__raffles_featured-verified' src={ cards.col_verified } alt="" />
+                        </div >
+                        <div className='colorBlue__raffles_featured-nft_name' >
+                            <p>{cards.nft_name}</p>
+                        </div >
                     </div>
+                </div>
 
-                    {/*Collection Name + Verified */}
-                    <div className='colorBlue__raffles-col_name' >
-                        <p>{cards.col_name} <img className = 'colorBlue__raffles-verified' src={ cards.col_verified } alt="" /></p>
-                    </div >
-
-                    {/*NFT Name */}
-                    <div className='colorBlue__raffles-nft_name' >
-                        <p>{cards.nft_name}</p>
-                    </div >
-
-                    {/*Ticket */}
+                <div className='tickets'>
                     <div className='colorBlue__raffles-ticket' >
                         Ticket
                     </div >
-
                     <div className='colorBlue__raffles-ticketprice' >
-                        <img src={ cards.currency } alt="" />{cards.raf_price}
+                        <img className='colorBlue__raffles-currency' src={ cards.currency } alt="" />{cards.raf_price}
                     </div >
-
-                    
-                    <div className='colorBlue__rafflesFeatured_raffle'>
-                        <div className='row raffle'>
-                    
-                            {/*Ends In */}
-                            <div className='colorBlue__rafflesFeatured_time-left'>
-                                <p className='colorBlue__rafflesFeatured_timer-label'>Ending in</p>
-                                {/* <div className='timer'><strong>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</strong></div> */}
-                                <div className='timer'><strong>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</strong></div>
-                            </div>
-                            {/*Reserve Prog */}
-                            <div className='colorBlue__rafflesFeatured_reserve'>
-                                <p className='colorBlue__rafflesFeatured_progress-bar-label'>Reserve</p>
-                                <div className='colorBlue__rafflesFeatured_progress-bar'>
-                                    {/* <ProgressBar bgcolor={ "#000000" } completed={50} /> */}
-                                    <ProgressBar bgcolor={ "#000000" } completed={Math.floor((cards.raf_tickets_sold/cards.raf_tickets_reserve) * 100)} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
+                </div>
                 
             </div>
+            <div className='row raffle'>
+                {/*Ends In */}
+                <div className='colorBlue__rafflesFeatured_time-left'>
+                    <p className='colorBlue__rafflesFeatured_timer-label'>Ending in</p>
+                    {/* <div className='timer'><strong>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</strong></div> */}
+                    <div className='timer'><strong>{timerComponents.length ? timerComponents : <span>Time's up!</span>}</strong></div>
+                </div>
+
+                {/*Reserve Prog */}
+                <div className='colorBlue__rafflesFeatured_reserve'>
+                    <p className='colorBlue__rafflesFeatured_progress-bar-label'>Reserve</p>
+                    <div className='colorBlue__rafflesFeatured_progress-bar'>
+                        {/* <ProgressBar bgcolor={ "#000000" } completed={50} /> */}
+                        <ProgressBar bgcolor={ "#000000" } completed={Math.floor((cards.raf_tickets_sold/cards.raf_tickets_reserve) * 100)} />
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     );
 };
