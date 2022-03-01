@@ -14,7 +14,7 @@ const FeaturedCreators = () => {
                     <div className='dot'></div>
                     <h1>Featured Creators</h1>    
                 </div>
-                <a className='view-all' href="">View all creators</a>
+                <a className='view-all' href="">View all Creators</a>
             </div>
             <span className='divider'></span>
             
