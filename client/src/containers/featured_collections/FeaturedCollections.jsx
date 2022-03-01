@@ -1,13 +1,12 @@
 import React from 'react';
 import './featuredCollections.css';
-import Carousel2 from '../../components/carousel/Carousel2';
-import collection1 from '../../components/collectionsFeatured/collection1';
+import Carousel from '../../components/carousel/Carousel';
+//import collection1 from '../../components/collectionsFeatured/collection1';
+import landing_array from '../../assets/landing_array'
 
-//TODO IDENTIFY  top 10 collections based on number of raffles in each collection
-//TODO GET collection variables for those 10 and put into Array
 
 const FeaturedCollections = () => {
-    const conttype = "collections_f";
+    
     return (
         <div className='colorBlue__featured-collections section__padding'>
             {/* heading */}
@@ -19,8 +18,10 @@ const FeaturedCollections = () => {
                 <a className='view-all' href="">View All Collections</a>
             </div>
             <span className='divider'></span>
-            {/* featured elements */}
-            <Carousel2 images={collection1} type="collections_f"/>
+            {/* featured elements 
+            <Carousel images={landing_array.collection1}/>
+            */}
+            <Carousel images={landing_array.collection1}/>
             
         </div>
     );

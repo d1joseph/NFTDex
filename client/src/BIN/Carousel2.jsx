@@ -1,14 +1,11 @@
 import Slider from 'react-slick';
 import "./carousel.css";
-import CollectionsFeatured from '../../components/collectionsFeatured/CollectionsFeatured';
-import CreatorsFeatured from '../creatorsFeatured/creatorsFeatured';
-import RafflesFeatured from '../rafflesFeatured/rafflesFeatured';
+import CollectionsFeatured from '../components/collectionsFeatured/CollectionsFeatured';
+import CreatorsFeatured from '../components/creatorsFeatured/creatorsFeatured';
+import RafflesFeatured from '../components/rafflesFeatured/rafflesFeatured';
 
 export default function Carousel2({ images , type}) {
   
-  console.log({images});
-  console.log(type);
-
 
   var settings = {
     dots: true,
@@ -27,7 +24,7 @@ export default function Carousel2({ images , type}) {
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1110,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -49,6 +46,7 @@ export default function Carousel2({ images , type}) {
     };
 
     const retType = type;
+    console.log(retType);
   
     if (retType == 'collections_f') {
       return (

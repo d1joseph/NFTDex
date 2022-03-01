@@ -107,9 +107,8 @@
 
 .colorBlue__creators-divider {
     background-color: var(--color-grey-light);
+    height: 1px;
     width: 100%;
-    height: 0px;
-    border: 1px solid #ACACAC;
 }
 
 .colorBlue__creators-followers {

@@ -1,10 +1,8 @@
 import React from 'react';
 import './featuredCreators.css';
-import Carousel2 from '../../components/carousel/Carousel2';
-import creators1 from '../../components/creatorsFeatured/creators1';
-import CreatorsFeatured from '../../components/creatorsFeatured/creatorsFeatured';
-
-
+import Carousel from '../../components/carousel/Carousel';
+//import creators1 from '../../components/creatorsFeatured/creators1';
+import landing_array from '../../assets/landing_array'
 
 const FeaturedCreators = () => {
 
@@ -20,14 +18,8 @@ const FeaturedCreators = () => {
             </div>
             <span className='divider'></span>
             
-            {/* featured elements in carousel 
-            <Carousel2 images={creators1} type="creators_f"/>
-            <CreatorsFeatured cards={creators1[0]}/>
-            */}
-            
-            <Carousel2 images={creators1} type="creators_f"/>
-            
-
+            {/* featured elements in carousel */}
+            <Carousel images={landing_array.creators1} />
         </div>
     );
 };

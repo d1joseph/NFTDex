@@ -1,5 +1,5 @@
 export { default as Blog } from './blog/Blog';
-export { default as Carousel2 } from './carousel/Carousel2';
+export { default as Carousel } from './carousel/Carousel';
 export { default as CollectionsFeatured } from './collectionsFeatured/CollectionsFeatured';
 export { default as CreatorsFeatured } from './creatorsFeatured/creatorsFeatured';
 export { default as RafflesFeatured } from './rafflesFeatured/rafflesFeatured';

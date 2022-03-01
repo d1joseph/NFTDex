@@ -93,11 +93,9 @@ useEffect(() => {
 // Prog bar state hooks
 const [completed, setCompleted] = useState(0);
 
-
-
-
     return (
-        <div className='colorBlue__raffles_featured' >
+        
+        <div className='colorBlue__raffles_featured'>
             
             {/*NFT Image */}
             <img className = 'colorBlue__raffles_featured-cardImg' src={ cards.nft_src } alt="" />

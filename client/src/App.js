@@ -95,7 +95,7 @@ const App = () => {
       <div className="featured-creators">
         <FeaturedCreators />
       </div>
-      
+      <br/>
       <div className="footer">
         <Footer />
       </div>

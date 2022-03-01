@@ -1,14 +1,14 @@
 /* File used as utility for retrieving database information */
 
-import img1 from "../../assets/Featured NFT Image.png";
-import img2 from "../../assets/trending_raffles/Gambling Ape 1.png";
-import img3 from "../../assets/trending_raffles/Bored Mummy Waking Up.png";
-import img4 from "../../assets/trending_raffles/Gauntlets.png";
+import nft_img1 from "../../assets/Featured NFT Image.png";
+import nft_img2 from "../../assets/trending_raffles/Gambling Ape 1.png";
+import nft_img3 from "../../assets/trending_raffles/Bored Mummy Waking Up.png";
+import nft_img4 from "../../assets/trending_raffles/Gauntlets.png";
 
-import logo1 from "../../assets/Featured NFT Collection.png";
-import logo2 from "../../assets/trending_raffles/Gambling Ape collection.png";
-import logo3 from "../../assets/trending_raffles/Bored Mummy Waking Up collection.png";
-import logo4 from "../../assets/trending_raffles/Bored Mummy Waking Up collection.png";
+import col_logo5 from "../../assets/Featured NFT Collection.png";
+import col_logo6 from "../../assets/trending_raffles/Gambling Ape collection.png";
+import col_logo7 from "../../assets/trending_raffles/Bored Mummy Waking Up collection.png";
+
 
 import verified from "../../assets/Verified.svg";
 import transparent from "../../assets/transparent.png";
@@ -19,11 +19,12 @@ import eth from '../../assets/Ethereum.png';
 const raffle1 = [
   {
     id: "1",
+    type: "raffle",
     nft_name: "#3690",
-    nft_src: img1,
+    nft_src: nft_img1,
     nft_alt: "",
     col_name: "Bored Ape Yacht Club",
-    col_logo: logo1,
+    col_logo: col_logo5,
     col_verified: verified,
     raf_price: 1.2,
     raf_tickets_reserve: 10000,
@@ -33,11 +34,12 @@ const raffle1 = [
   },
   {
     id: "2",
+    type: "raffle",
     nft_name: "Gambling Ape #4145",
-    nft_src: img2,
+    nft_src: nft_img2,
     nft_alt: "",
     col_name: "Gambling Apes",
-    col_logo: logo2,
+    col_logo: col_logo6,
     col_verified: verified,
     raf_price: 0.1,
     raf_tickets_reserve: 10000,
@@ -45,13 +47,15 @@ const raffle1 = [
     raf_draw_datetime: "",
     currency: eth
   },
+
   {
     id: "3",
+    type: "raffle",
     nft_name: "Bored Mummy #4114",
-    nft_src: img3,
+    nft_src: nft_img3,
     nft_alt: "",
     col_name: "Bored Mummy Waking Up",
-    col_logo: logo3,
+    col_logo: col_logo7,
     col_verified: transparent,
     raf_price: 0.05,
     raf_tickets_reserve: 10000,
@@ -61,11 +65,12 @@ const raffle1 = [
   },
   {
     id: "4",
+    type: "raffle",
     nft_name: "Pixel Purple",
-    nft_src: img4,
+    nft_src: nft_img4,
     nft_alt: "",
     col_name: "Gauntlets",
-    col_logo: logo4,
+    col_logo: col_logo7,
     col_verified: transparent,
     raf_price: 0.01,
     raf_tickets_reserve: 10000,
