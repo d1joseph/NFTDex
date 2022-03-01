@@ -24,7 +24,7 @@ const TrendingRaffles = () => {
             Multiple Cards - <Carousel images={landing_array.raffle1}/>
             Mixed Cards - <Carousel images={landing_array.mixedarray}/>
             */}
-            <Carousel images={landing_array.mixedarray}/>
+            <Carousel images={landing_array.raffle1}/>
 
         </div>
     );

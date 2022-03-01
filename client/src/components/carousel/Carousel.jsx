@@ -7,8 +7,8 @@ export default function Carousel({ images }) {
   
   var settings = {
     dots: true,
-    infinite: false,
-    slidesToShow: 5,
+    infinite: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
