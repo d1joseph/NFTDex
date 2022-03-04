@@ -6,6 +6,7 @@ import CarouselCards from './CarouselCards';
 export default function Carousel({ images }) {
   
   var settings = {
+    arrows: false,
     dots: true,
     infinite: true,
     slidesToShow: 4,
@@ -17,8 +18,6 @@ export default function Carousel({ images }) {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
         }
       },
       {
@@ -26,8 +25,6 @@ export default function Carousel({ images }) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
         }
       },
       {
@@ -35,14 +32,11 @@ export default function Carousel({ images }) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
-          
-          }
+        }
       }
     ]
     };
-
+    
   return (
     <div>
       <Slider {...settings}>

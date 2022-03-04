@@ -2,33 +2,34 @@ import CollectionsFeatured from '../../components/collectionsFeatured/Collection
 import CreatorsFeatured from '../creatorsFeatured/creatorsFeatured';
 import RafflesFeatured from '../rafflesFeatured/rafflesFeatured';
 import Blog from '../../components/blog/Blog';
+import "./carousel.css";
 
 export default function CarouselCards({ cards, cardtype }) {
-    
+
     if (cardtype == 'collection') {
         return (
-            <div>
+            <div className='Card'>
                 <CollectionsFeatured cards={cards}/> 
             </div>
         );
     }
     else if (cardtype == 'creator') {
         return (
-            <div>
+            <div className='Card'>
                 <CreatorsFeatured cards={cards}/>
             </div>
         );
     }
     else if (cardtype == 'raffle') {
         return (
-            <div>
+            <div className='Card'>
                 <RafflesFeatured cards={cards}/>
             </div>
         );
     }
     else if (cardtype == 'blog') {
         return (
-            <div>
+            <div className='Card'>
                 <Blog cards={cards}/>
             </div>
         );

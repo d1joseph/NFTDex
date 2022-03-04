@@ -15,6 +15,7 @@ const TrendingRaffles = () => {
                     <h1>Trending Raffles</h1>    
                 </div>
                 <a className='view-all' href="">View All Raffles</a>
+                
             </div>
             
             <span className='divider'></span>

@@ -1,11 +1,69 @@
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiMenuFill, RiCloseLine,RiMagicLine,RiBarChart2Line,RiFileList3Line,RiPaletteLine } from 'react-icons/ri';
 import logo from '../../assets/Logo.jpg';
 import './navbar.css'
 
+const SlideDrawer = (props) => {
+    let drawerClasses = 'colorBlue__side-drawer'
+    document.body.style.overflow = "visible";
+
+    if(props.show) {
+        drawerClasses = 'colorBlue__side-drawer open'
+        document.body.style.overflow = "hidden";
+    }
+
+    return(
+        <div className={drawerClasses}>
+            <div className="colorBlue__navbar-menu_container-links">
+                <div className='colorBlue__navbar-search_mini'>
+                    <form action="/" method='get'>
+                        <label htmlFor="search-bar_mini"><span className="hidden"></span></label>
+                        <input type="text" readOnly name="s" id="search-bar_mini" placeholder='Search the Blue...' value="" />
+                    </form>
+                </div>
+                <span></span>
+                <div className="colorBlue__navbar-menu_links">
+                    <div>
+                        <RiMagicLine/>
+                        <a href="#">    Explore</a>
+                    </div>
+                    &#62;
+                </div>
+                <div className="colorBlue__navbar-menu_links">
+                    <div>
+                        <RiBarChart2Line/>
+                        <a href="#">    Stats</a>
+                    </div>
+                    &#62;
+                </div>
+                <div className="colorBlue__navbar-menu_links">
+                    <div>
+                        <RiFileList3Line/>
+                        <a href="#">    Resources</a>
+                    </div>
+                    &#62;
+                </div>
+                <div className="colorBlue__navbar-menu_links">
+                    <div>
+                        <RiPaletteLine/>
+                        <a href="#">   Create</a>
+                    </div>
+                    &#62;
+                </div>
+                <div className="colorBlue__navbar-menu_container-links-web3">
+                    <button type="button">Connect</button>
+                </div>
+            </div>
+        </div>
+    );
+    
+
+};
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
+    
+
 
     return (
         <div className='colorBlue__navbar'>
@@ -37,22 +95,15 @@ const Navbar = () => {
             <div className='colorBlue__navbar-menu'>
                 {toggleMenu
                   ? <RiCloseLine color="#7D7D7D" size={27} onClick={() => setToggleMenu(false)} />
-                  : <RiMenu3Line color="#7D7D7D" size={27} onClick={() => setToggleMenu(true)} />}  
-                {toggleMenu && (
-                <div className='colorBlue__navbar-menu_container scale-up-center'>
-                    <div className="colorBlue__navbar-menu_container-links">
-                        <p><a href="#">Explore</a></p>
-                        <p><a href="#">Stats</a></p>
-                        <p><a href="#">Resources</a></p>
-                        <p><a href="#">Create</a></p>
-                    </div>
-                    <div className="colorBlue__navbar-menu_container-links-web3">
-                        <button type="button">Connect</button>
-                    </div>
-                </div>
-                )}
+                  : <RiMenuFill color="#7D7D7D" size={27} onClick={() => setToggleMenu(true)} />
+                }  
             </div>
+            <div>
+                <SlideDrawer show={toggleMenu}/>
+            </div>    
         </div>
+        
+        
     );
 };
 
