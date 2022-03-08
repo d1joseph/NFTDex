@@ -2,9 +2,11 @@ import React from 'react';
 import './collectionsFeatured.css';
 
 export default function CollectionsFeatured({ cards }) {
+    console.log('Collection - Specific-Card ID='+cards.id);
     
+
     return (
-        <div className='colorBlue__collections_featured' >
+        <div className='colorBlue__collections_featured' key={cards.id}>
             {/* Image */}
             <img className = 'colorBlue__collections_featured-cardImg' src={ cards.col_src } alt="" />
             

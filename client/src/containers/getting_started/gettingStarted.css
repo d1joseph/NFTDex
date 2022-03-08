@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items:baseline;
 
     margin: 5px;
 }
@@ -26,17 +26,20 @@
 .colorBlue__getting-started-heading .dot {
     height: 15px;
     width: 15px;
+    min-height: 15px;
+    min-width: 15px;
     border-radius: 50%;
     
-    background-color: var(--color-grey-medium);
+    background-color: var(--color-blue);
 
     margin-right: 10px;
 
 }
 
 .colorBlue__getting-started-heading .view-all {
-    color: var(--color-grey);
+    color: var(--color-blue);
     font-weight: 800;
+    text-align: end;
 }
 
 .divider {
@@ -79,7 +82,7 @@ button {
     height: 40px;
     width: 120px;
 }
-
+/*
 @media screen and (min-width: 428px) and (max-width: 800px) {
     .colorBlue__getting-started .blogs {
         display: flex;
@@ -96,3 +99,4 @@ button {
 
 
 }
+*/

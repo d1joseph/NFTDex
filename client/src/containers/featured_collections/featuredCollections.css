@@ -3,7 +3,7 @@
     flex-direction: column;
 
     width: 100%;
-    height: 550px;
+    height: auto;
 
     font-family: var(--font-family);
     font-size: 14px;
@@ -13,30 +13,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
 
     margin: 5px;
 }
 
 .wrapper {
     display: inline-flex;
-    align-items: center;
+    align-items:center;
 }
 
 .colorBlue__featured-collections-heading .dot {
     height: 15px;
     width: 15px;
+    min-height: 15px;
+    min-width: 15px;
     border-radius: 50%;
     
-    background-color: var(--color-grey-medium);
+    background-color: var(--color-blue);
 
     margin-right: 10px;
 
 }
 
 .colorBlue__featured-collections-heading .view-all {
-    color: var(--color-grey);
+    color: var(--color-blue);
     font-weight: 800;
+    text-align: end;
 }
 
 .divider {

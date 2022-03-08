@@ -1,15 +1,12 @@
 import React from 'react';
 import './gettingStarted.css';
-//import Blog from '../../components/blog/Blog';
-//import tips from '../../assets/getting_started/10 Tips.png';
-//import safe from '../../assets/getting_started/Keeping Safe.png';
-//import beginners from '../../assets/getting_started/Beginners Guide.png';
 import Carousel from '../../components/carousel/Carousel';
 import landing_array from '../../assets/landing_array'
 
 
 const GettingStarted = () => {
-
+    console.log("GettingStart Start");
+    console.log(landing_array.articles);
     return (
         <div className='colorBlue__getting-started section__padding'>
             {/* heading */}
@@ -25,7 +22,7 @@ const GettingStarted = () => {
 
             {/* featured elements */}
             
-            <Carousel images={landing_array.articles} />
+            <Carousel images={landing_array.mixedarray} />
             
 
             {/* view all btn 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RiMenuFill, RiCloseLine,RiMagicLine,RiBarChart2Line,RiFileList3Line,RiPaletteLine } from 'react-icons/ri';
+import { RiMenuFill, RiCloseLine,RiMagicLine,RiBarChart2Line,RiFileList3Line,RiUserSettingsLine,RiMoonFill } from 'react-icons/ri';
 import logo from '../../assets/Logo.jpg';
 import './navbar.css'
 
@@ -21,38 +21,58 @@ const SlideDrawer = (props) => {
                         <input type="text" readOnly name="s" id="search-bar_mini" placeholder='Search the Blue...' value="" />
                     </form>
                 </div>
-                <span></span>
+                
                 <div className="colorBlue__navbar-menu_links">
-                    <div>
-                        <RiMagicLine/>
-                        <a href="#">    Explore</a>
+                    <div className="colorBlue__navbar-menu_links_left">
+                        <div className="colorBlue__navbar-menu_links_logo">
+                            <RiUserSettingsLine/>
+                        </div>
+                        <a href="#">Profile</a>
+                    </div>
+                    &#62;
+                </div>                
+                <div className="colorBlue__navbar-menu_links">
+                    <div className="colorBlue__navbar-menu_links_left">
+                        <div className="colorBlue__navbar-menu_links_logo">
+                            <RiMagicLine/>
+                        </div>
+                        <a href="#">Explore</a>
                     </div>
                     &#62;
                 </div>
                 <div className="colorBlue__navbar-menu_links">
-                    <div>
-                        <RiBarChart2Line/>
-                        <a href="#">    Stats</a>
+                    <div className="colorBlue__navbar-menu_links_left">
+                        <div className="colorBlue__navbar-menu_links_logo">
+                            <RiFileList3Line/>
+                        </div>
+                        <a href="#">Resources</a>
                     </div>
                     &#62;
                 </div>
                 <div className="colorBlue__navbar-menu_links">
-                    <div>
-                        <RiFileList3Line/>
-                        <a href="#">    Resources</a>
+                    <div className="colorBlue__navbar-menu_links_left">
+                        <div className="colorBlue__navbar-menu_links_logo">
+                            <RiBarChart2Line/>
+                        </div>
+                        <a href="#">Stats</a>
                     </div>
                     &#62;
                 </div>
                 <div className="colorBlue__navbar-menu_links">
-                    <div>
-                        <RiPaletteLine/>
-                        <a href="#">   Create</a>
+                    <div className="colorBlue__navbar-menu_links_left">
+                        <div className="colorBlue__navbar-menu_links_logo">
+                            <RiMoonFill/>
+                        </div>
+                        <a href="#">Night Mode</a>
                     </div>
-                    &#62;
+                    <div class="toggle-switch">
+                        <input type="checkbox" class="toggle-switch-checkbox" name="toggleSwitch" id="toggleSwitch" />
+                    </div>
                 </div>
-                <div className="colorBlue__navbar-menu_container-links-web3">
+
+            </div>
+            <div className="colorBlue__navbar-menu_container-links-web3">
                     <button type="button">Connect</button>
-                </div>
             </div>
         </div>
     );
@@ -77,7 +97,9 @@ const Navbar = () => {
                     <input type="text" readOnly name="s" id="search-bar" placeholder='Search the Blue...' value="" />
                 </form>
             </div>
-
+            
+            
+            
             <div className='colorBlue__navbar-links'>
                 <div className='colorBlue__navbar-links_container'>
                     <p><a href="#">Explore</a></p>

@@ -5,31 +5,32 @@ import Blog from '../../components/blog/Blog';
 import "./carousel.css";
 
 export default function CarouselCards({ cards, cardtype }) {
-
+    console.log('Carousel Cards, type='+cardtype)
+    
     if (cardtype == 'collection') {
         return (
-            <div className='Card'>
+            <div className='Card' key={cards.id}>
                 <CollectionsFeatured cards={cards}/> 
             </div>
         );
     }
     else if (cardtype == 'creator') {
         return (
-            <div className='Card'>
+            <div className='Card' key={cards.id}>
                 <CreatorsFeatured cards={cards}/>
             </div>
         );
     }
     else if (cardtype == 'raffle') {
         return (
-            <div className='Card'>
+            <div className='Card' key={cards.id}>
                 <RafflesFeatured cards={cards}/>
             </div>
         );
     }
     else if (cardtype == 'blog') {
         return (
-            <div className='Card'>
+            <div className='Card' key={cards.id}>
                 <Blog cards={cards}/>
             </div>
         );

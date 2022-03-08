@@ -2,9 +2,10 @@ import React from 'react';
 import './CreatorsFeatured.css';
 
 export default function CreatorsFeatured({ cards }) {
+    console.log('creators - Specific-Card ID='+cards.id);
     
     return (
-        <div className='colorBlue__creators_featured' >
+        <div className='colorBlue__creators_featured' key={cards.id} >
             {/* Creator Profile Banner + Image*/}
             <img className = 'colorBlue__creators_featured-cardImg' src={ cards.auth_banner_src } alt={ cards.auth_banner_alt} />
             <img className='colorBlue__creators-icon'src={ cards.auth_logo_src } alt={ cards.auth_logo_alt} />

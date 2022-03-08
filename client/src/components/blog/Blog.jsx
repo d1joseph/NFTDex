@@ -18,9 +18,10 @@ export default Blog
 */
 
 export default function Blog({ cards }) {
+    console.log('GettingStarted - Specific-Card ID='+cards.id);
     
     return (
-        <div className='colorBlue__getting-started-blog'>
+        <div className='colorBlue__getting-started-blog' key={cards.id}>
             <a href="#">
                 <img src={cards.src} alt="" />
                 <h1>{cards.title}</h1>            

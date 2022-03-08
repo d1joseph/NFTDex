@@ -4,7 +4,9 @@ import CarouselCards from './CarouselCards';
 
 
 export default function Carousel({ images }) {
+  console.log('Carousel, array[0].type= '+images[0].type);
   
+
   var settings = {
     arrows: false,
     dots: true,

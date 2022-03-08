@@ -1,7 +1,7 @@
 .colorBlue__getting-started-blog {
 
     height: 400px;
-    width: 300px;
+    width: 290px;
 
     background-color: var(--color-white);
     margin: 1rem;
@@ -16,7 +16,7 @@
     object-position: center; 
 
     height: 300px;
-    width: 300px;
+    width: 290px;
 
     border-radius: 10px 10px 0 0 ;
 }

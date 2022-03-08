@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './RafflesFeatured.css';
 
 export default function RafflesFeatured({ cards }) {
+    console.log('Raffle - Specific-Card ID='+cards.id);
     
 // raffle timer
 const raffleTimeLeft = () => {
@@ -25,7 +26,7 @@ const raffleTimeLeft = () => {
 const ProgressBar = (props) => {
     const { completed } = props;
     
-    let bgcolor = '#000000';
+    let bgcolor = '#00A1FF';
 
     if (completed == 100){
         bgcolor = '#2DB67C'
@@ -58,7 +59,6 @@ const ProgressBar = (props) => {
         
         <div style={containerStyles}>
             <div style={fillerStyles}>
-                
             </div>
         </div>         
     );
@@ -95,7 +95,7 @@ const [completed, setCompleted] = useState(0);
 
     return (
         
-        <div className='colorBlue__raffles_featured'>
+        <div className='colorBlue__raffles_featured' key={cards.id}>
             
             {/*NFT Image */}
             <img className = 'colorBlue__raffles_featured-cardImg' src={ cards.nft_src } alt="" />
@@ -119,11 +119,12 @@ const [completed, setCompleted] = useState(0);
                 </div>
 
                 <div className='tickets'>
-                    <div className='colorBlue__raffles-ticket' >
-                        Ticket
-                    </div >
+                    
                     <div className='colorBlue__raffles-ticketprice' >
                         <img className='colorBlue__raffles-currency' src={ cards.currency } alt="" />{cards.raf_price}
+                    </div >
+                    <div className='colorBlue__raffles-ticket' >
+                        Per Ticket
                     </div >
                 </div>
                 

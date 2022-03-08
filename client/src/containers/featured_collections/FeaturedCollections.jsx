@@ -6,7 +6,8 @@ import landing_array from '../../assets/landing_array'
 
 
 const FeaturedCollections = () => {
-    
+    console.log("Collections Start");
+    console.log(landing_array.collection1);
     return (
         <div className='colorBlue__featured-collections section__padding'>
             {/* heading */}
