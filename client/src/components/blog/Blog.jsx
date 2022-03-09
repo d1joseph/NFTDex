@@ -18,7 +18,6 @@ export default Blog
 */
 
 export default function Blog({ cards }) {
-    console.log('GettingStarted - Specific-Card ID='+cards.id);
     
     return (
         <div className='colorBlue__getting-started-blog' key={cards.id}>

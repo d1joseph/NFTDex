@@ -2,7 +2,6 @@ import React from 'react';
 import './CreatorsFeatured.css';
 
 export default function CreatorsFeatured({ cards }) {
-    console.log('creators - Specific-Card ID='+cards.id);
     
     return (
         <div className='colorBlue__creators_featured' key={cards.id} >

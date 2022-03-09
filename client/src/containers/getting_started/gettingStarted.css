@@ -82,21 +82,3 @@ button {
     height: 40px;
     width: 120px;
 }
-/*
-@media screen and (min-width: 428px) and (max-width: 800px) {
-    .colorBlue__getting-started .blogs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-        width: 100%;
-        height: auto;
-    
-        font-family: var(--font-family);
-        font-size: 14px;
-    }
-
-
-}
-*/

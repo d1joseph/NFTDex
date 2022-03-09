@@ -5,8 +5,7 @@ import Carousel from '../../components/carousel/Carousel';
 import landing_array from '../../assets/landing_array'
 
 const FeaturedCreators = () => {
-    console.log("Creators Start");
-    console.log(landing_array.creators1);
+    
     return (
         <div className='colorBlue__featured-creators section__padding'>
             {/* heading */}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './RafflesFeatured.css';
 
 export default function RafflesFeatured({ cards }) {
-    console.log('Raffle - Specific-Card ID='+cards.id);
+    
     
 // raffle timer
 const raffleTimeLeft = () => {

@@ -32,7 +32,7 @@ import blog_src3 from '../assets/getting_started/Beginners Guide.png';
 //Collections
 const collection1 = [
   {
-    id: '1',
+    id: 0,
     type: 'collection',
     col_name: 'HAPE Prime',
     col_src: col_img1,
@@ -44,7 +44,7 @@ const collection1 = [
     auth_verified: verified
   },
   {
-    id: '2',
+    id: 1,
     type: 'collection',
     col_name: 'Creepz Genesis',
     col_src: col_img2,
@@ -56,7 +56,7 @@ const collection1 = [
     auth_verified: transparent
   },
   {
-    id: '3',
+    id: 2,
     type: 'collection',
     col_name: 'Flapp Flappy Bat Bois',
     col_src: col_img3,
@@ -68,7 +68,7 @@ const collection1 = [
     auth_verified: transparent
   },
   {
-    id: '4',
+    id: 3,
     type: 'collection',
     col_name: 'Azuki',
     col_alt: '',
@@ -86,7 +86,7 @@ const collection1 = [
 //Creators
 const creators1 = [
     {
-      id: '1',
+      id: 0,
       type: 'creator',
       auth_name: 'Banks',
       auth_socials: '@banks',
@@ -99,7 +99,7 @@ const creators1 = [
       auth_description: 'just a random kid who was born to be a loser, but fkd around on the internet and made a life for himself.'
     },
     {
-      id: '2',
+      id: 1,
       type: 'creator',
       auth_name: 'Banks2',
       auth_socials: '@banks_',
@@ -112,7 +112,7 @@ const creators1 = [
       auth_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
-      id: '3',
+      id: 2,
       type: 'creator',
       auth_name: 'Name is too long for the space',
       auth_socials: '@banks__',
@@ -125,7 +125,7 @@ const creators1 = [
       auth_description: 'just a random kid who was born to be a loser, but fkd around on the internet and made a life for himself.'
     },
     {
-      id: '4',
+      id: 3,
       type: 'creator',
       auth_name: 'Banks4',
       auth_socials: '@banks___',
@@ -142,7 +142,7 @@ const creators1 = [
   //Trending Raffles
   const raffle1 = [
     {
-      id: '1',
+      id: 0,
       type: 'raffle',
       nft_name: '#3690',
       nft_src: nft_img1,
@@ -157,7 +157,7 @@ const creators1 = [
       currency: eth
     },
     {
-      id: '2',
+      id: 1,
       type: 'raffle',
       nft_name: 'Gambling Ape #4145',
       nft_src: nft_img2,
@@ -173,7 +173,7 @@ const creators1 = [
     },
   
     {
-      id: '3',
+      id: 2,
       type: 'raffle',
       nft_name: 'Bored Mummy #4114',
       nft_src: nft_img3,
@@ -188,7 +188,7 @@ const creators1 = [
       currency: eth
     },
     {
-      id: '4',
+      id: 3,
       type: 'raffle',
       nft_name: 'Pixel Purple',
       nft_src: nft_img4,
@@ -207,7 +207,7 @@ const creators1 = [
   //Mixed Array
   const mixedarray = [
     {
-      id: '1',
+      id: 0,
       type: 'collection',
       col_name: 'HAPE Prime',
       col_src: col_img1,
@@ -219,7 +219,7 @@ const creators1 = [
       auth_verified: verified
     },
     {
-      id: '2',
+      id: 1,
       type: 'creator',
       auth_name: 'Banks2',
       auth_socials: '@banks_',
@@ -232,7 +232,7 @@ const creators1 = [
       auth_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     },
     {
-      id: '3',
+      id: 2,
       type: 'raffle',
       nft_name: 'Gambling Ape #4145',
       nft_src: nft_img2,
@@ -247,7 +247,7 @@ const creators1 = [
       currency: eth
     },
     {
-      id: '4',
+      id: 3,
       type: ''
     }
   ];
@@ -255,19 +255,19 @@ const creators1 = [
   //Articles
   const articles = [
     {
-      id: '1',
+      id: 0,
       type: 'blog',
       src: blog_src1,
       title: 'Keeping yourself safe when buying NFTs on ColorBlue'
     },
     {
-      id: '2',
+      id: 1,
       type: 'blog',
       src: blog_src2,
       title: '10 tips for avoiding scams and staying safe on the decentralized web'
     },
     {
-      id: '3',
+      id: 2,
       type: 'blog',
       src: blog_src3,
       title: "The Beginners's guide to creating & selling digital art NFTs"

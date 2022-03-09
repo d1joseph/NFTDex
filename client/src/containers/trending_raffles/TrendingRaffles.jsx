@@ -5,8 +5,7 @@ import Carousel from '../../components/carousel/Carousel';
 import landing_array from '../../assets/landing_array'
 
 const TrendingRaffles = () => {
-    console.log("Raffles Start");
-    console.log(landing_array.raffle1);
+    
     return (
         <div className='colorBlue__trending-raffles section__padding' >
             {/* heading */}

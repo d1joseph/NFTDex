@@ -2,13 +2,17 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 
 .sliderWrapper {
-  display: flex !important;
+  margin-top: 1px;
   
+  display: flex !important;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 1px;
 } 
+
+.slick-track {
+  display: flex;
+}
 
 .slick-dots li button:before{
   color: var(--color-blue);
@@ -19,13 +23,11 @@
   color: var(--color-blue);
 }
 
-
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
   top: 50%;
   z-index: 1;
- 
 }
 
 .slides .slick-prev {
@@ -38,11 +40,12 @@
 
 /* Used when no Card is passed*/
 .sliderImg {
-  box-sizing: border-box;
   height: 300px;
   width: 300px;
   padding: 0px 2vw;
+
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 .imgTitle {

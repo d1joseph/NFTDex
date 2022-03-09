@@ -4,7 +4,7 @@
     position: relative;
 
     height: 421px;
-    width: 290px;
+    width: 340px;
 
     font-family: var(--font-family);
 
@@ -35,11 +35,13 @@
 }
 
 .colorBlue__raffles_featured-cardImg {
-    box-sizing: border-box;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
     align-items: center;
+    box-sizing: border-box;
+    object-fit: cover;
+
+    height: 300px;
+    
+    border-radius: 10px 10px 0px 0px;
   }
 
 .row.nft_details {
@@ -55,52 +57,53 @@
 
 .stack_nameID {
     margin-left: 5px;
-    
 }
 
-
-
-
 .colorBlue__raffles_featured-col_icon {
-    
+    box-sizing: border-box;
     width: 40px;
     height: 40px;
-    box-sizing: border-box;
+
     clip-path: circle(20px at center);
 }
 
 .colorBlue__raffles_featured-col_name {
     display: flex;
     align-items: center;
+    
     font-weight: 600;
     font-size: 14px;
-    
 }
 
 .colorBlue__raffles_featured-verified {
     height: 18px;
     width: 18px;
+
     padding-left: 5px;
   }
 
   .colorBlue__raffles_featured-nft_name {
+    display: flex;
+
     font-weight: 400;
     font-size: 10px;
-    display: flex;
-    color: #7D7D7D;
+    
+    color: var(--color-grey);
 }
 
 .colorBlue__raffles-ticket {
     justify-content: flex-end;
+    
     font-size: 10px;
     text-align: right;
-    color: #7D7D7D;
+    color: var(--color-grey);
 }
 
 .colorBlue__raffles-ticketprice {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
     font-weight: 600;
     font-size: 14px;
 }
@@ -108,6 +111,7 @@
 .colorBlue__raffles-currency{
     height: 13px;
     width: 7px;
+    
     margin-right:2px;
 }
 
@@ -118,11 +122,12 @@
 
 .colorBlue__rafflesFeatured_timer-label, .colorBlue__rafflesFeatured_progress-bar-label {
     font-size: 10px;
-    color: #7D7D7D;
+    color: var(--color-grey);
 }
 
 .colorBlue__rafflesFeatured_timer {
     min-width: 113px;
+    
     font-size: 12px;
 }
 
@@ -136,7 +141,6 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    
 }
 
 .colorBlue__rafflesFeatured_reserve p {
