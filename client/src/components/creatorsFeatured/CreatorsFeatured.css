@@ -54,6 +54,8 @@
     width: 80px;
     height: 80px;
     
+    border: 5px solid var(--color-white);
+    border-radius: 50%;
     clip-path: circle(40px at center);
 }
 

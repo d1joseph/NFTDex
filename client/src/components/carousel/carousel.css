@@ -38,16 +38,3 @@
   right: 5%;
 }
 
-/* Used when no Card is passed*/
-.sliderImg {
-  height: 300px;
-  width: 300px;
-  padding: 0px 2vw;
-
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.imgTitle {
-  font-weight: 900;
-}

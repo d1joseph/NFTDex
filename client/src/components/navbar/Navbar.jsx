@@ -17,7 +17,7 @@ const SlideDrawer = (props) => {
     return(
         <div className={drawerClasses}>
             <div className="colorBlue__navbar-menu_container-links">
-            <div className="colorBlue__navbar-menu_links">
+                <div className="colorBlue__navbar-menu_wallet">
                     <div className="colorBlue__navbar-menu_links_left">
                         <div className="colorBlue__navbar-menu_links_logo">
                             <RiWalletLine/>
@@ -26,7 +26,7 @@ const SlideDrawer = (props) => {
                     </div>
                     &#62;
                 </div>
-                <div className="colorBlue__navbar-menu_links">
+                <div className="colorBlue__navbar-menu_profile">
                     <div className="colorBlue__navbar-menu_links_left">
                         <div className="colorBlue__navbar-menu_links_logo">
                             <RiUserSettingsLine/>
@@ -35,7 +35,7 @@ const SlideDrawer = (props) => {
                     </div>
                     &#62;
                 </div>                
-                <div className="colorBlue__navbar-menu_links">
+                <div className="colorBlue__navbar-menu_explore">
                     <div className="colorBlue__navbar-menu_links_left">
                         <div className="colorBlue__navbar-menu_links_logo">
                             <RiMagicLine/>
@@ -44,7 +44,7 @@ const SlideDrawer = (props) => {
                     </div>
                     &#62;
                 </div>
-                <div className="colorBlue__navbar-menu_links">
+                <div className="colorBlue__navbar-menu_stats">
                     <div className="colorBlue__navbar-menu_links_left">
                         <div className="colorBlue__navbar-menu_links_logo">
                             <RiBarChart2Line/>
@@ -53,7 +53,7 @@ const SlideDrawer = (props) => {
                     </div>
                     &#62;
                 </div>
-                <div className="colorBlue__navbar-menu_links">
+                <div className="colorBlue__navbar-menu_resources">
                     <div className="colorBlue__navbar-menu_links_left">
                         <div className="colorBlue__navbar-menu_links_logo">
                             <RiFileList3Line/>
@@ -62,7 +62,7 @@ const SlideDrawer = (props) => {
                     </div>
                     &#62;
                 </div>
-                <div className="colorBlue__navbar-menu_links">
+                <div className="colorBlue__navbar-menu_nightmode">
                     <div className="colorBlue__navbar-menu_links_left">
                         <div className="colorBlue__navbar-menu_links_logo">
                             <RiMoonFill/>
@@ -75,9 +75,11 @@ const SlideDrawer = (props) => {
                 </div>
 
             </div>
+            {/* Old Huy Code
             <div className="colorBlue__navbar-menu_container-links-web3">
                     <button type="button">Connect</button>
             </div>
+            */}
         </div>
     );
 
@@ -88,11 +90,14 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     
     return (
+        
         <div className='colorBlue__navbar'>
+            {/* Logo */}
             <div className='colorBlue__navbar-links_logo'>
                 <img src={ logo } alt="logo" />
             </div>
-
+            
+            {/* Search Bar */}
             <div className='colorBlue__navbar-search'>
                 <form action="/" method='get' className='colorBlue__navbar-search_form'>
                     <label htmlFor="search-bar"><span className="hidden"></span></label>
@@ -100,6 +105,7 @@ const Navbar = () => {
                 </form>
             </div>
             
+            {/* Links */}
             <div className='colorBlue__navbar-links'>
                 <div className='colorBlue__navbar-links_container'>
                     <p><a href="#">Explore</a></p>
@@ -108,19 +114,21 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/*
+            {/* Old Huy Code
             <div className='colorBlue__navbar-web3'>
                 <button type='button'>Connect</button>
                 <img src="" alt="" id="wallet"/>
             </div>
             */}
 
+            {/* Buttons - Search*/}
             <div className='colorBlue__navbar-searchicon_border'>
                 <div className='colorBlue__navbar-searchicon'>
                     <RiSearchLine color="#000000" size={25} /* onClick={() => setToggleSearch(true)}*/ />    
                 </div>
             </div>
-
+            
+            {/* Buttons - Menu*/}
             <div className='colorBlue__navbar-menuicon_border'>
                 <div className='colorBlue__navbar-menu'>
                     {toggleMenu
@@ -129,19 +137,22 @@ const Navbar = () => {
                     }  
                 </div>
             </div>
-
+            
+            {/* Buttons - Profile*/}
             <div className='colorBlue__navbar-profileicon_border'>
                 <div className='colorBlue__navbar-profile'>
                     <RiUserSettingsLine color="#000000" size={25} /* onClick={() => setToggleMenu(true)} */ />
                 </div>
             </div>
-
+            
+            {/* Buttons - Wallet*/}
             <div className='colorBlue__navbar-walleticon_border'>
                 <div className='colorBlue__navbar-wallet'>
                     <RiWalletLine color="#000000" size={25} /* onClick={() => setToggleMenu(true)} */ />
                 </div>
             </div>
             
+            {/* Menu Drawer */}
             <div>
                 <SlideDrawer show={toggleMenu}/>
             </div>    

@@ -1,6 +1,7 @@
 import CollectionsFeatured from '../../components/collectionsFeatured/CollectionsFeatured';
 import CreatorsFeatured from '../creatorsFeatured/creatorsFeatured';
-import RafflesFeatured from '../rafflesFeatured/rafflesFeatured';
+import RafflesGrid from '../rafflesGrid/RafflesGrid';
+import RafflesList from '../rafflesList/RafflesList';
 import Blog from '../../components/blog/Blog';
 import "./carousel.css";
 
@@ -8,30 +9,22 @@ export default function CarouselCards({ cards, cardtype }) {
     
     if (cardtype == 'collection') {
         return (
-            <div className='card' key={cards.id}>
-                <CollectionsFeatured cards={cards}/> 
-            </div>
+            <CollectionsFeatured cards={cards}/> 
         );
     }
     else if (cardtype == 'creator') {
         return (
-            <div className='card' key={cards.id}>
-                <CreatorsFeatured cards={cards}/>
-            </div>
+            <CreatorsFeatured cards={cards}/>
         );
     }
     else if (cardtype == 'raffle') {
         return (
-            <div className='card' key={cards.id}>
-                <RafflesFeatured cards={cards}/>
-            </div>
+            <RafflesGrid cards={cards}/>
         );
     }
     else if (cardtype == 'blog') {
         return (
-            <div className='card' key={cards.id}>
-                <Blog cards={cards}/>
-            </div>
+            <Blog cards={cards}/>
         );
     }
     else {
