@@ -52,14 +52,12 @@
     padding-bottom: 5px;
 }
 
-.nuts {
+.raffles_grid-spacing {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     
     height:80px;
-    
-    
 }
 
 /*Collection Name,Veri - Timeleft*/

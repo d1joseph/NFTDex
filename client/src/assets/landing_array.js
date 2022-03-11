@@ -29,6 +29,27 @@ import blog_src1 from '../assets/getting_started/10 Tips.png';
 import blog_src2 from '../assets/getting_started/Keeping Safe.png';
 import blog_src3 from '../assets/getting_started/Beginners Guide.png';
 
+//Raffle Featured
+const featuredRaffle = [
+  {
+    id: 0,
+    type: 'featuredRaffle',
+    nft_name: 'Bored Ape Yacht Club #3690 Extermely long namesssssssssss',
+    nft_src: nft_img1,
+    nft_alt: '',
+    col_name: 'Bored Ape Yacht Club super long name oh no',
+    col_logo: col_logo5,
+    col_verified: verified,
+    raf_price: 100.001,
+    raf_tickets_reserve: 10000,
+    raf_tickets_sold: 7000,
+    raf_draw_datetime: '',
+    currency: eth,
+    currenccy_USD: 2816,
+  }
+]
+
+
 //Collections
 const collection1 = [
   {
@@ -273,6 +294,6 @@ const creators1 = [
       title: "The Beginners's guide to creating & selling digital art NFTs"
     }
   ];
-  export default {collection1, creators1, raffle1, mixedarray, articles};
+  export default {collection1, creators1, raffle1, mixedarray, articles, featuredRaffle};
   
   

@@ -1,0 +1,228 @@
+.colorBlue__raffle-featured {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 330px;
+
+    font-family: var(--font-family);
+
+    background-color: var(--color-white);
+    
+    border-radius: 15px;
+    border: 1px solid var(--color-grey-light);
+
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+
+    transition: transform 150ms ease-in;
+}
+
+.colorBlue__raffle-featured:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.colorBlue__raffle-featured .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+.colorBlue__raffle-featured .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5;
+    margin: 5px 10px 5px 10px;
+}
+
+/* nft image */ 
+.colorBlue__raffle-featured-nftimage {
+    height: 330px;
+    
+    border-radius: 14px 14px 0px 0px;
+}
+
+
+/* ---Collection Row--- */
+.row.colorBlue__raffle-featured-collection_row {
+    margin-top: 20px;
+}
+
+/* Collection Icon */
+.colorBlue__raffle-featured-collection_icon {
+    height: 33px;
+    width: 33px;
+
+    clip-path: circle(16px at center);
+}
+
+/* collection name */
+
+.colorBlue__raffle-featured-collection_name {
+    max-width: 249px;
+    
+    margin-left: 10px;
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.colorBlue__raffle-featured-collection_name_flex{
+    display: flex;   
+}
+
+.colorBlue__raffle-featured-collection_name p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* NFT ID */
+.colorBlue__raffle-featured-nftId {
+    font-size: 10px;
+    font-weight: 400;
+
+    color: var(--color-grey);
+}
+
+/* ---Raffle Row--- */
+.row.colorBlue__raffle-featured-raffle_row {
+    justify-content: space-between;
+}
+
+/* Ending In */
+.colorBlue__raffle-featured-timer_label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-grey);
+}
+
+/* Timer */
+.colorBlue__raffle-featured-timer {
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 2px 0px;
+}
+
+/* Reserve Block */
+.colorBlue__raffle-featured-reserve {
+    align-content: center;
+}
+/* Reserve */
+.colorBlue__raffle-featured-progress_bar_label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-grey);
+    
+    
+}
+
+/* Reserve Progress */
+.colorBlue__raffle-featured-progress-bar {
+    min-width: 120px;
+}
+
+
+/* ---Ticket Row--- */
+.row.colorBlue__raffle-featured-ticket_row {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* 'Ticket Price' */
+.colorBlue__raffle-featured-ticket_label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-grey);
+}
+
+/* Price */
+.colorBlue__raffle-featured-ticket_price {
+    display: flex;
+    align-items: center;
+}
+
+.colorBlue__raffle-featured-ticket_price img {
+    margin-right: 5px;
+}
+
+.colorBlue__raffle-featured-ticket_price p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.colorBlue__raffle-featured-ticket_price span {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+/* Join Button */
+.colorBlue__raffle-featured-Join button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    font-size: 14px;
+    font-weight: 700;
+
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    
+    border-radius: 10px;
+    border: none;
+
+    height: 40px;
+    width: 120px;
+}
+
+/* -- Old Huy code 
+.row.nft-owner {
+    justify-content: space-between;
+}
+
+.nft-owner img {
+    position: relative;
+    left: 15%;
+    
+    border-radius: 50%;
+    margin: 3.5px;
+}
+
+.nft-owner p {
+    font-size: 14px;
+}
+
+.nft-owner strong {
+    color: var(--color-blue);
+}
+
+.nft-owner button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    font-family: var(--font-family);
+    font-weight: 800;
+
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    
+    border-radius: 10px;
+    border: none;
+
+    height: 30px;
+    width: 100px;
+}
+*/

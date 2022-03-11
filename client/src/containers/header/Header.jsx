@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './header.css';
-import RaffleListing from '../../components/raffleListing/RaffleListing';
+import landing_array from '../../assets/landing_array'
+import RaffleFeatured from '../../components/raffleFeatured/RaffleFeatured';
 
 const Header = () => {
     
@@ -20,8 +21,8 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='colorBlue__header-feature'>
-                <RaffleListing />
+            <div className='colorBlue__header-feature' >
+                <RaffleFeatured data={landing_array.featuredRaffle[0]} />
             </div>
         </div>
     )

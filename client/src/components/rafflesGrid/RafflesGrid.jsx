@@ -29,11 +29,11 @@ const ProgressBar = (props) => {
     
     let bgcolor = 'var(--color-blue)';
     let border = '1px solid var(--color-blue)';
-    
+    let width = completed + 2;
 
     if (completed == 100){
-        bgcolor = '#2DB67C'
-        border = '1px solid #2DB67C'
+        bgcolor = 'var(--color-green)'
+        border = '1px solid var(--color-green)'
     
     }
 
@@ -45,8 +45,11 @@ const ProgressBar = (props) => {
     }
     
     const fillerStyles = {
-        height: '105%',
-        width: `${completed}%`,
+        position: 'relative',
+        top: '-1px',
+        left: '-1px',
+        height: 10,
+        width: `${width}%`,
         backgroundColor: bgcolor,
         borderRadius: 'inherit',
         textAlign: 'right',
@@ -97,7 +100,7 @@ const [completed, setCompleted] = useState(0);
             {/*NFT Image */}
             <img className = 'colorBlue__raffles_grid-cardImg' src={ cards.nft_src } alt="" />
             
-            <div className='nuts'>
+            <div className='raffles_grid-spacing'>
             {/*Collection Name,Veri - Timeleft*/}
             <div className='row raffles_grid-top'>
                  {/*Collection Name,Veri */}

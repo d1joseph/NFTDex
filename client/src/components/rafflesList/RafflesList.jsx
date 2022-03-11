@@ -29,10 +29,11 @@ const ProgressBar = (props) => {
     
     let bgcolor = 'var(--color-blue)';
     let border = '1px solid var(--color-blue)'
+    let width = completed + 2;
 
     if (completed == 100){
-        bgcolor = '#2DB67C'
-        border = '1px solid #2DB67C'
+        bgcolor = 'var(--color-green)'
+        border = '1px solid var(--color-green)'
     }
 
     const containerStyles = {
@@ -43,9 +44,11 @@ const ProgressBar = (props) => {
     }
     
     const fillerStyles = {
-        
-        height: '100%',
-        width: `${completed}%`,
+        position: 'relative',
+        top: '-1px',
+        left: '-1px',
+        height: 10,
+        width: `${width}%`,
         backgroundColor: bgcolor,
         borderRadius: 'inherit',
         textAlign: 'right',
@@ -102,6 +105,7 @@ const [completed, setCompleted] = useState(0);
                 {/*Collection Name, Ticket*/}
                 {/*NFTName, TicketPrice*/}
                 <div className='row raffles_list-top'>
+                    {/*Collection Name, NFTName*/}
                     <div className='colorBlue__raffles_list-collection'>
                         <div className='colorBlue__raffles_list-coll_name' >
                             <p>{cards.col_name}</p>
@@ -112,6 +116,7 @@ const [completed, setCompleted] = useState(0);
                             <p>{cards.nft_name}</p>
                         </div >
                     </div>
+                    {/*Ticket, TicketPrice*/}
                     <div>
                         <div className='colorBlue__raffles_list-resprice'>Ticket</div>
                         <div className='colorBlue__raffles_list-ticketprice' >

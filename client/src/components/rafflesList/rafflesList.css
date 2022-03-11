@@ -57,7 +57,8 @@
 
 .row.raffles_list-top {
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    height: 50px;
 }
 
 /*Collection Name*/
@@ -98,8 +99,6 @@
 }
 
 .colorBlue__raffles_list-nft_name p {
-    
-    
     text-overflow:ellipsis;
     overflow:hidden;
 
@@ -110,8 +109,6 @@
 }
 
 /*Price*/
-
-
 .colorBlue__raffles_list-resprice {
     display: flex;
     align-items: center;
@@ -119,8 +116,7 @@
     
     font-size: 12px;
     color: var(--color-grey);
-
-    margin-bottom:5px;
+    
 }
 
 
@@ -131,6 +127,8 @@
 
     font-weight: 600;
     font-size: 16px;
+
+    margin-top: 3px;
 }
 
 .colorBlue__raffles_list-ticketprice img{
