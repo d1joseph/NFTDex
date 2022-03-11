@@ -10,5 +10,9 @@
   --color-grey: #7D7D7D;
   --color-grey-medium: #ACACAC;
   --color-grey-light: #C4C4C4;
-  --color-white: #ffffff;
+  --color-grey-hover: #F3F3F3;
+  --color-white: #FFFFFF;
+  --color-green: #2ECC71;
+  --color-red: #E74C3C;
+  --color-yellow: #F1C40F;
 }

@@ -1,8 +1,12 @@
 import React from 'react';
 import './featuredCollections.css';
+import Carousel from '../../components/carousel/Carousel';
+//import collection1 from '../../components/collectionsFeatured/collection1';
+import landing_array from '../../assets/landing_array'
+
 
 const FeaturedCollections = () => {
-
+    
     return (
         <div className='colorBlue__featured-collections section__padding'>
             {/* heading */}
@@ -14,8 +18,11 @@ const FeaturedCollections = () => {
                 <a className='view-all' href="">View All Collections</a>
             </div>
             <span className='divider'></span>
-
-            {/* featured elements */}
+            {/* featured elements 
+            <Carousel images={landing_array.collection1}/>
+            */}
+            <Carousel images={landing_array.collection1}/>
+            
         </div>
     );
 };

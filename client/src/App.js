@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import { SimpleStorageContract } from "./contracts/SimpleStorage.json";
 // import { getWeb3 } from "./getWeb3";
+
 import { Navbar } from "./components";
 import { Header, TrendingRaffles, FeaturedCollections, FeaturedCreators, GettingStarted, Footer } from "./containers";
 import "./App.css";
@@ -78,7 +79,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="navbar">
-        <Navbar />
+        <Navbar/>
       </div>
       <div className="header">
         <Header />
@@ -95,7 +96,7 @@ const App = () => {
       <div className="featured-creators">
         <FeaturedCreators />
       </div>
-      
+      <br/>
       <div className="footer">
         <Footer />
       </div>

@@ -48,15 +48,15 @@ a {
 /* Large devices - tablets, XL mobile etc. */
 @media screen and (max-width: 700px) {
   .section__padding {
-    padding: 4rem;
-    margin: 4rem;
+    padding: 4rem 2rem;
+    margin: 4.5rem 0rem;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 550px) {
   .section__padding {
-    padding: 4rem 2rem;
-    margin: 4rem 2rem;
+    padding: 2rem 1rem;
+    margin: 4.5rem 0rem;
   }
 }
