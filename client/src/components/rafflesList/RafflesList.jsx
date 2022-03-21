@@ -117,8 +117,10 @@ const [completed, setCompleted] = useState(0);
                         </div >
                     </div>
                     {/*Ticket, TicketPrice*/}
-                    <div>
-                        <div className='colorBlue__raffles_list-resprice'>Ticket</div>
+                    <div className='colorBlue__raffles_list-tickets'>
+                        <div className='colorBlue__raffles_list-resprice'>
+                                Ticket
+                        </div>
                         <div className='colorBlue__raffles_list-ticketprice' >
                             <img src={ cards.currency } alt="" />{cards.raf_price}
                         </div >

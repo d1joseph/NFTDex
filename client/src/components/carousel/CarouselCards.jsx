@@ -1,5 +1,8 @@
 import CollectionsFeatured from '../../components/collectionsFeatured/CollectionsFeatured';
+import CollectionsGrid from '../../components/collectionsGrid/CollectionsGrid';
+import CollectionsList from '../../components/collectionsList/CollectionsList';
 import CreatorsFeatured from '../creatorsFeatured/creatorsFeatured';
+import CreatorsList from '../creatorsList/creatorsList';
 import RafflesGrid from '../rafflesGrid/RafflesGrid';
 import RafflesList from '../rafflesList/RafflesList';
 import Blog from '../../components/blog/Blog';
@@ -9,17 +12,17 @@ export default function CarouselCards({ cards, cardtype }) {
     
     if (cardtype == 'collection') {
         return (
-            <CollectionsFeatured cards={cards}/> 
+            <CollectionsList cards={cards}/> 
         );
     }
     else if (cardtype == 'creator') {
         return (
-            <CreatorsFeatured cards={cards}/>
+            <CreatorsList cards={cards}/>
         );
     }
     else if (cardtype == 'raffle') {
         return (
-            <RafflesGrid cards={cards}/>
+            <RafflesList cards={cards}/>
         );
     }
     else if (cardtype == 'blog') {

@@ -1,0 +1,109 @@
+.colorBlue__creators_list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    
+    width: 340px;
+    height: 100px;
+    margin: 1rem;
+
+    font-family: var(--font-family);
+
+    border: 1px solid var(--color-grey-light);
+    border-radius: 15px;
+    
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    transition: transform 150ms ease-in;
+}
+
+.colorBlue__creators_list:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+}
+
+.colorBlue__creators_list .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+    /*padding: 0px 10px 0px 10px;*/
+    /*margin: 0px 0px 5px 10px;*/
+}
+
+.colorBlue__creators_list .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5;
+    margin: 5px 10px 5px 10px;
+}
+
+/* Row */
+.row.creators_list {
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Left - Image, name, items*/
+.colorBlue__creators_list-left {
+    display: flex;
+}
+
+
+/* Creator Image*/
+.colorBlue__creators_list-icon {
+    width: 60px;
+    height: 60px;
+
+    box-sizing: border-box;
+    clip-path: circle(30px at center);
+}
+
+.col.creators_list_details {
+    margin-right: 0px
+}
+
+/* Creator Name + Verification*/
+.colorBlue__creators_list-name_and_item {
+    font-size: 12px;
+    color: var(--color-grey);
+}
+
+/* Creator Name */
+.colorBlue__creators_list-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 140px;
+    
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.colorBlue__creators_list-name p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Creator Verification*/
+.colorBlue__creators_list-verified {
+    height: 18px;
+    width: 18px;
+
+    padding-left: 5px;
+  }
+
+
+
+  
+
+
+
+
+
+
