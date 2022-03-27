@@ -74,7 +74,7 @@ class App extends Component {
   }
 } */
 
-// App can inherit UI
+
 const App = () => {
   return (
     <div className="App">
