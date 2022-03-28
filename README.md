@@ -1,3 +1,3 @@
 # RaffleNFT
-Implementation of a decentralized raffle application where users can list their NFT for sale as a raffle or buy tickets for other listed NFTs. 
+Implementation of a decentralized raffle application allowing users to list their NFT for sale in the form of a raffle or buy tickets to participate in other raffles. 
 
