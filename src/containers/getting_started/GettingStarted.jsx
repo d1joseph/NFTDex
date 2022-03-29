@@ -7,9 +7,9 @@ import landing_array from '../../assets/landing_array'
 const GettingStarted = () => {
     
     return (
-        <div className='colorBlue__getting-started section__padding'>
+        <div className='colorBlue__getting-started '>
             {/* heading */}
-            <div className='colorBlue__getting-started-heading'>
+            <div className='colorBlue__getting-started-heading section__header_padding'>
                 <div className='wrapper'>
                     <div className='dot'></div>
                     <h1>Getting Started</h1>    
@@ -21,7 +21,10 @@ const GettingStarted = () => {
 
             {/* featured elements */}
             
+            <div className='colorBlue__getting-started-body section__body_padding'>
             <Carousel images={landing_array.articles} />
+            </div>
+            
             
 
             {/* view all btn 

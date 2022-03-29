@@ -7,9 +7,9 @@ import landing_array from '../../assets/landing_array'
 const FeaturedCreators = () => {
     
     return (
-        <div className='colorBlue__featured-creators section__padding'>
+        <div className='colorBlue__featured-creators'>
             {/* heading */}
-            <div className='colorBlue__featured-creators-heading'>
+            <div className='colorBlue__featured-creators-heading section__header_padding'>
                 <div className='wrapper'>
                     <div className='dot'></div>
                     <h1>Featured Creators</h1>    
@@ -19,7 +19,10 @@ const FeaturedCreators = () => {
             <span className='divider'></span>
             
             {/* featured elements in carousel */}
+            <div className='colorBlue__featured-creators-body section__body_padding'>
             <Carousel images={landing_array.creators1} />
+            </div>
+            
         </div>
     );
 };

@@ -12,17 +12,17 @@ export default function CarouselCards({ cards, cardtype }) {
     
     if (cardtype == 'collection') {
         return (
-            <CollectionsList cards={cards}/> 
+            <CollectionsFeatured cards={cards}/> 
         );
     }
     else if (cardtype == 'creator') {
         return (
-            <CreatorsList cards={cards}/>
+            <CreatorsFeatured cards={cards}/>
         );
     }
     else if (cardtype == 'raffle') {
         return (
-            <RafflesList cards={cards}/>
+            <RafflesGrid cards={cards}/>
         );
     }
     else if (cardtype == 'blog') {

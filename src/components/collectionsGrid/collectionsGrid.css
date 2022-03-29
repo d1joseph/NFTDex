@@ -1,0 +1,126 @@
+.colorBlue__collections_grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    
+
+    width: 340px;
+    height: 360px;
+    margin: 1rem;
+
+    font-family: var(--font-family);
+
+    border: 1px solid var(--color-grey-light);
+    border-radius: 15px;
+    
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    transition: transform 150ms ease-in;
+}
+
+.colorBlue__collections_grid:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+}
+
+.colorBlue__collections_grid .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 5px 10px;
+}
+
+.colorBlue__collections_grid .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5;
+    margin: 5px 10px 5px 10px;
+}
+
+.colorBlue__collections_grid-cardImg {
+    box-sizing: border-box;
+    object-fit: cover;
+    align-items: center;
+    
+    height: 220px;
+    
+    
+    border-radius: 10px 10px 0px 0px;
+}
+
+.colorBlue__creators_grid-icon {
+    position: relative;
+    top: -25px;
+    left: 42%;
+    
+    width: 50px;
+    height: 50px;
+
+    box-sizing: border-box;
+    clip-path: circle(25px at center);
+}
+
+.row.creator {
+    position: relative;
+    justify-content: center;
+
+    top: -13px;
+    
+}
+
+.colorBlue__creators_grid-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 270px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-black);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.colorBlue__creators_grid-name p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.colorBlue__creators_grid-verified {
+    height: 16px;
+    width: 16px;
+
+    padding-left: 5px;
+  }
+
+
+.colorBlue__creators_grid-description {
+    height: 50px;
+    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: var(--color-grey);
+
+    /* Addition lines for 4 line or multiline ellipsis */
+    text-overflow:ellipsis;
+    overflow:hidden;
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+
+
+
+
+
+
