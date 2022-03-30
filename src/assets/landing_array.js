@@ -59,10 +59,14 @@ const collection1 = [
     col_src: col_img1,
     col_alt: '',
     col_logo: col_logo1,
-    col_items: 8.1,
+    col_desc: '8K NEXT-GENERATION, HIGH FASHION HAPES Unique, fully 3D and built to unite the ape multiverse. Designed and styled by Digimental Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at convallis mi. Aliquam arcu nulla, fermentum non tincidunt sit amet, euismod eu metus. Suspendisse convallis sapien id nunc tincidunt, eget varius ante placerat. Curabitur suscipit dui eu lectus sodales semper. Nullam sed convallis lorem. Aliquam eget viverra velit. Mauris at dolor metus. Cras a venenatis augue. ',
+    col_bg: '#606060',
+    col_items: 8100,
     col_verified: verified,
+    col_from: 0.001,
     auth_name: 'HAPEBEAST',
-    auth_verified: verified
+    auth_verified: verified,
+    currency: eth
   },
   {
     id: 1,
@@ -71,10 +75,14 @@ const collection1 = [
     col_src: col_img2,
     col_alt: '',
     col_logo: col_logo2,
-    col_items: 11.1,
+    col_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at convallis mi. Aliquam arcu nulla, fermentum non tincidunt sit amet, euismod eu metus. Suspendisse convallis sapien id nunc tincidunt, eget varius ante placerat. Curabitur suscipit dui eu lectus sodales semper. Nullam sed convallis lorem. Aliquam eget viverra velit. Mauris at dolor metus. Cras a venenatis augue.",
+    col_bg: '#A62DDE',
+    col_items: 11123,
     col_verified: transparent,
+    col_from: 0.001,
     auth_name: 'Genesis-Creepz-OVERLORD',
-    auth_verified: transparent
+    auth_verified: transparent,
+    currency: eth
   },
   {
     id: 2,
@@ -83,10 +91,14 @@ const collection1 = [
     col_src: col_img3,
     col_alt: '',
     col_logo: col_logo3,
-    col_items: 9.7,
+    col_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at convallis mi. Aliquam arcu nulla, fermentum non tincidunt sit amet, euismod eu metus. Suspendisse convallis sapien id nunc tincidunt, eget varius ante placerat. Curabitur suscipit dui eu lectus sodales semper. Nullam sed convallis lorem. Aliquam eget viverra velit. Mauris at dolor metus. Cras a venenatis augue. ",
+    col_bg: '#332F5F',
+    col_items: 9777,
     col_verified: verified,
+    col_from: 0.001,
     auth_name: 'SutterSystems',
-    auth_verified: transparent
+    auth_verified: transparent,
+    currency: eth
   },
   {
     id: 3,
@@ -95,10 +107,14 @@ const collection1 = [
     col_alt: '',
     col_src: col_img4,
     col_logo: col_logo4,
-    col_items: 10,
+    col_desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at convallis mi. Aliquam arcu nulla, fermentum non tincidunt sit amet, euismod eu metus. Suspendisse convallis sapien id nunc tincidunt, eget varius ante placerat. Curabitur suscipit dui eu lectus sodales semper. Nullam sed convallis lorem. Aliquam eget viverra velit. Mauris at dolor metus. Cras a venenatis augue. ",
+    col_bg: '',
+    col_items: 10000,
     col_verified: transparent,
+    col_from: 0.001,
     auth_name: 'TeamAzuki',
-    auth_verified: verified
+    auth_verified: verified,
+    currency: eth
   }
 ];
 
