@@ -20,13 +20,7 @@ export default function CreatorsFeatured({ cards }) {
                 </div >
             </div>
             
-            {/* Creator Social */}
-            <div className='row social'>
-                <div className='colorBlue__creators-socials'>
-                    {cards.auth_socials}
-                </div>
-            </div>
-
+            
             {/* Creator Desc/Bio */}
             <div className='row desc'>
                 <div className='colorBlue__creators-description'>
@@ -34,16 +28,6 @@ export default function CreatorsFeatured({ cards }) {
                 </div>
             </div>
 
-            {/* Divider */}                
-            <span className='colorBlue__creators-divider'> </span>
-            <br/>
-            
-            {/* Followers */}                
-            <div className='row followers'>
-                <div className='colorBlue__creators-followers'>
-                <strong>{cards.auth_followers}</strong> Followers
-                </div>
-            </div>
             
         </div>
     );

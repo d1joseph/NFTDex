@@ -13,7 +13,7 @@
     align-items: flex-start;
     flex-direction: column;
     
-    
+    padding-top: 3rem;
     margin-right: 5rem;
     max-width: 50%;
 }
@@ -93,10 +93,15 @@
 }
 
 .colorBlue__header-feature {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 3rem 2rem 1rem;
+    
+    margin: 1rem 2rem;
 }
 
 @media screen and (max-width: 1050px) {

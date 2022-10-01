@@ -36,7 +36,7 @@ a {
   }
 }
 
-/* Desktop */
+/* Desktop 
 .section__padding {
   padding: 4rem 6rem;
 }
@@ -45,18 +45,36 @@ a {
   margin: 4rem 6rem;
 }
 
+*/
+.section__header_padding {
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+}
+.section__body_padding {
+  padding: 1rem 2rem 1rem;
+  margin: 1rem 2rem;
+}
+
 /* Large devices - tablets, XL mobile etc. */
 @media screen and (max-width: 700px) {
-  .section__padding {
-    padding: 4rem 2rem;
-    margin: 4.5rem 0rem;
+  .section__header_padding {
+    padding: 1rem 1.5rem 0.5rem;
+    margin: 1rem 0rem 0rem;
+  }
+  .section__body_padding {
+    padding: 0rem 0rem 1rem;
+    margin: 0rem 0rem 1rem;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 550px) {
-  .section__padding {
-    padding: 2rem 1rem;
-    margin: 4.5rem 0rem;
+  .section__header_padding {
+    padding: 1rem 1rem 0.5rem;
+    margin: 1rem 0rem 0rem;
+  }
+  .section__body_padding {
+    padding: 0rem 0rem 1rem;
+    margin: 0rem 0rem 1rem;
   }
 }

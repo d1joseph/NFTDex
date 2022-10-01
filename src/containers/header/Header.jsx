@@ -6,7 +6,7 @@ import RaffleFeatured from '../../components/raffleFeatured/RaffleFeatured';
 const Header = () => {
     
     return (
-        <div className='colorBlue__header section__padding' id="home">
+        <div className='colorBlue__header section__header_padding' id="home">
             <div className='colorBlue__header-content'>
                 <h1 className='landing'>Discover, collect, and sell extraordinary NFTs</h1>
                 <h2>Color Blue the first NFT raffle and market</h2>
@@ -21,7 +21,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='colorBlue__header-feature' >
+            <div className='colorBlue__header-feature'  >
                 <RaffleFeatured data={landing_array.featuredRaffle[0]} />
             </div>
         </div>
