@@ -71,10 +71,8 @@ const ProgressBar = (props) => {
     );
 };
 
-
 const raffleFeatured = ({ data }) => {
-    
-
+    // timer state
     const [timeLeft, setTimeLeft] = useState(raffleTimeLeft());
     const timerComponents = [];
 
@@ -100,7 +98,6 @@ const raffleFeatured = ({ data }) => {
         return () => clearTimeout(timer);
     });
 
-    
     // Prog bar state hooks
     const [completed, setCompleted] = useState(0); 
 
@@ -111,7 +108,6 @@ const raffleFeatured = ({ data }) => {
         setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), []);
     })
     */
-    
 
     return (
         <div className='colorBlue__raffle-featured' key={data.id}>
