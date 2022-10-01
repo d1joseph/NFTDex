@@ -23,7 +23,6 @@
 
 .colorBlue__navbar-links_logo {
     align-items: center;
-
     margin-right: 1rem;
 }
 
@@ -359,7 +358,6 @@
 @media screen and (max-width: 550px) {
     /* HIDE */
     .colorBlue__navbar-web3,
-    .colorBlue__navbar-search,
     .colorBlue__navbar-walleticon_border,
     .colorBlue__navbar-profileicon_border  {
         display: none;
@@ -386,6 +384,9 @@
     }
     .colorBlue__navbar-menu_container-links-web3 {
         display: block;
+    }
+    .colorBlue__navbar-search{
+        justify-content:flex-end;
     }
     
 }
