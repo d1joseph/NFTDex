@@ -1,5 +1,5 @@
 # RaffleNFT
-An example React web app for an NFT raffle [DApp](https://en.wikipedia.org/wiki/Decentralized_application) concept. Design inspired by OpenSea.
+An example React app for an NFT raffle [DApp](https://en.wikipedia.org/wiki/Decentralized_application) concept. Design inspired by OpenSea.
 
 # Running The Project
 1. `git clone` this repository 
