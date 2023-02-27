@@ -8,4 +8,4 @@ A React web app for an NFT raffle [DApp](https://en.wikipedia.org/wiki/Decentral
 4. `npm start` to run the project on your localhost
 
 # Live Demo
-View the Heroku hosted demo at: https://color-blue-dev.herokuapp.com/
+View the demo: https://color-blue-dev.herokuapp.com/
